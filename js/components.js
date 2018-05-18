@@ -35,8 +35,7 @@ Vue.component('app-side', {
 });
 
 Vue.component('app-work', {
-    template: `<div id="colorlib-main">
-	<div class="colorlib-work">
+    template: `<div class="colorlib-work">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -196,18 +195,16 @@ Vue.component('app-work', {
 
 			</div>
 		</div>
-	</div>
-</div>`
+	</div>`
 });
 
 Vue.component('app-about', {
-    template: `<div id="colorlib-main">
-	<div class="colorlib-about">
+    template: `<div class="colorlib-about">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
 					<div class="about-img animate-box" data-animate-effect="fadeInLeft" style="background-image: url(images/img_bg_2.jpg);">
-						<div class="about-img-2 animate-box" data-animate-effect="fadeInRight" style="background-image: url(/images/img_bg_3.jpg);"></div>
+						<div class="about-img-2 animate-box" data-animate-effect="fadeInRight" style="background-image: url(/images/profile/myphoto.jpg);"></div>
 					</div>
 				</div>
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
@@ -273,32 +270,11 @@ Vue.component('app-about', {
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-
-	<div id="get-in-touch" class="colorlib-bg-color">
-		<div class="colorlib-narrow-content">
-			<div class="row">
-				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2>Get in Touch!</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-					<p class="colorlib-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-					<p><a href="#" class="btn btn-primary btn-learn">Contact me!</a></p>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>`
+	</div>`
 });
 
 Vue.component('app-services', {
-    template: `<div id="colorlib-main">
-	<div class="colorlib-services">
+    template: `<div class="colorlib-services">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -371,75 +347,12 @@ Vue.component('app-services', {
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-	<div class="colorlib-work">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-md-pull-3">
-					<span class="heading-meta">Portfolio</span>
-					<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Recent Work</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<div class="project" style="background-image: url(images/work-1.jpg);">
-						<div class="desc">
-							<div class="con">
-								<h3><a href="#">Work 01</a></h3>
-								<span>Branding, Ilustration</span>
-								<p class="icon">
-									<span><a href="#"><i class="icon-share3"></i></a></span>
-									<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-									<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<div class="project" style="background-image: url(images/work-2.jpg);">
-						<div class="desc">
-							<div class="con">
-								<h3><a href="work.html">Work 02</a></h3>
-								<span>Logo, Web, Branding</span>
-								<p class="icon">
-									<span><a href="#"><i class="icon-share3"></i></a></span>
-									<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-									<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="get-in-touch" class="colorlib-bg-color">
-		<div class="colorlib-narrow-content">
-			<div class="row">
-				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-					<h2>Get in Touch!</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-					<p class="colorlib-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-					<p><a href="#" class="btn btn-primary btn-learn">Contact me!</a></p>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
+	</div>	
 `
 });
 
 Vue.component('app-blog', {
-    template: `<div id="colorlib-main">
-    <div class="colorlib-blog">
+    template: `<div class="colorlib-blog">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 col-md-pull-3">
@@ -654,5 +567,6 @@ Vue.component('app-contact-page', {
     </div>
     <div id="map"></div>
 </div>`});
-const VueHome = { template: '<app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact>' }
+const VueHome = { template: '<div id="colorlib-main"><app-about></app-about><app-services></app-services><app-work></app-work><app-contact></app-contact></div>' };
+//const VueHome = { template: '<div><app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact></div>' }
 
