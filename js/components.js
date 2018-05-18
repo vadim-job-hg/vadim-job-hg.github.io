@@ -479,7 +479,7 @@ Vue.component('app-blog', {
 });
 
 Vue.component('app-contact', {
-    template: '<div id="get-in-touch" class="colorlib-bg-color"><div class="colorlib-narrow-content"><div class="row"><div data-animate-effect="fadeInLeft" class="col-md-6 animate-box fadeInLeft animated"><h2>Get in Touch!</h2></div></div> <div class="row"><div data-animate-effect="fadeInLeft" class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated"><p class="colorlib-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> <p><a href="#" class="btn btn-primary btn-learn">Contact me!</a></p></div> <a href="#/foo" class="">Go to Foo</a> <a href="#/bar" class="router-link-exact-active router-link-active">Go to Bar</a> <div>bar</div></div></div></div>'
+    template: '<div id="get-in-touch" class="colorlib-bg-color"><div class="colorlib-narrow-content"><div class="row"><div data-animate-effect="fadeInLeft" class="col-md-6 animate-box fadeInLeft animated"><h2>Get in Touch!</h2></div></div> <div class="row"><div data-animate-effect="fadeInLeft" class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated"><p class="colorlib-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> <p><a href="#" class="btn btn-primary btn-learn">Contact me!</a></p></div></div></div></div>'
 });
 
 Vue.component('app-contact-page', {
