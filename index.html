@@ -69,14 +69,22 @@
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 <script src="js/components.js"></script>
 <script>
-    const Foo = { template: '<div>foo</div>' };
-    const Bar = { template: '<div>bar</div>' };
+    const VueHome = { template: '<div id="colorlib-main"><app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact></div>' };
+    const VueAbout = { template: '<div id="colorlib-main"><app-about></app-about></div>'};
+    const VueServices = { template: '<div id="colorlib-main"><app-services></app-services></div>'};
+    const VueBlog = { template: '<div id="colorlib-main"><app-blog></app-blog></div>'};
+    const VueWork = { template: '<div id="colorlib-main"><app-work></app-work></div>'};
+    const VueContact = { template: '<div id="app-contact-page"><app-contact-page></app-contact-page></div>'};
     const routes = [
         { path: '/', component: VueHome },
-        //{ path: '/bar', component: Bar }
+        { path: '/about', component: VueAbout },
+        { path: '/services', component: VueServices },
+        { path: '/blog', component: VueBlog },
+        { path: '/work', component: VueWork },
+        { path: '/contact', component: VueContact }
     ];
     const router = new VueRouter({
-        routes // сокращение от `routes: routes`
+        routes:routes // сокращение от `routes: routes`
     });
     const app = new Vue({
         router

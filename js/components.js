@@ -3,12 +3,13 @@ Vue.component('app-nav', {
         <h1 id="colorlib-logo"><a href="index.html"><span>Wo</span><span>rk</span></a></h1>
         <nav id="colorlib-main-menu" role="navigation">
             <ul>
-                <li class="colorlib-active"><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+               <!-- class="colorlib-active"-->
+                <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="/work">Work</router-link></li>
+                <li><router-link to="/about">About</router-link></li>
+                <li><router-link to="/services">Services</router-link></li>
+                <li><router-link to="/blog">Blog</router-link></li>
+                <li><router-link to="/contact">Contact</router-link></li>
             </ul>
         </nav>
 
@@ -550,6 +551,4 @@ Vue.component('app-contact-page', {
     </div>
     <div id="map"></div>
 </div>`});
-const VueHome = { template: '<div id="colorlib-main"><app-about></app-about><app-services></app-services><app-work></app-work><app-contact></app-contact></div>' };
-//const VueHome = { template: '<div><app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact></div>' }
 
