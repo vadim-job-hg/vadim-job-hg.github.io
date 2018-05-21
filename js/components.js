@@ -497,7 +497,7 @@ Vue.component('app-contact-page', {
                 <div class="col-md-5 col-md-push-6">
                     <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
                         <div class="colorlib-icon">
-                            <i class="icon-globe-outline"></i>
+                            <i class="icon-mail6"></i>
                         </div>
                         <div class="colorlib-text">
                             <p><a href="mailto::vadimjobhg86@gmail.com">vadimjobhg86@gmail.com</a></p>
@@ -515,10 +515,10 @@ Vue.component('app-contact-page', {
 
                     <div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
                         <div class="colorlib-icon">
-                            <i class="icon-phone"></i>
+                            <i class="icon-social-skype"></i>
                         </div>
                         <div class="colorlib-text">
-                            <p><a href="tel://">+123 456 7890</a></p>
+                            <p><a href="skype:vadimus_hg?chat">vadimus_hg</a></p>
                         </div>
                     </div>
                 </div>
