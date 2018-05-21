@@ -509,7 +509,7 @@ Vue.component('app-contact-page', {
                             <i class="icon-map"></i>
                         </div>
                         <div class="colorlib-text">
-                            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                            <p>Ukraine Kharkiv</p>
                         </div>
                     </div>
 
