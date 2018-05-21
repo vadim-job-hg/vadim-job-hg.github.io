@@ -533,9 +533,6 @@ Vue.component('app-contact-page', {
                                     <input type="text" class="form-control" placeholder="Email">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone">
-                                </div>
-                                <div class="form-group">
                                     <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                                 </div>
                                 <div class="form-group">
