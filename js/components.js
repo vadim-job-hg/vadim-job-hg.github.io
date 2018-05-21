@@ -500,7 +500,7 @@ Vue.component('app-contact-page', {
                             <i class="icon-globe-outline"></i>
                         </div>
                         <div class="colorlib-text">
-                            <p><a href="#">info@domain.com</a></p>
+                            <p><a href="mailto::vadimjobhg86@gmail.com">vadimjobhg86@gmail.com</a></p>
                         </div>
                     </div>
 
