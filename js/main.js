@@ -192,8 +192,4 @@
 		sliderMain();
 		stickyFunction();
 	});
-
-
 }());
-
-const HomeComponent = require('../components/about.vue');
