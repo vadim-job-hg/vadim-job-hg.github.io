@@ -195,3 +195,5 @@
 
 
 }());
+
+const HomeComponent = require('../components/about.vue');
