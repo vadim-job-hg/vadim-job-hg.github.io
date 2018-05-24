@@ -8303,14 +8303,17 @@ module.exports = Vue;
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
 },{"_process":1,"timers":2}],4:[function(require,module,exports){
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"colorlib-about"},[_c('div',{staticClass:"container-fluid"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-6"},[_c('div',{staticClass:"about-img animate-box",staticStyle:{"background-image":"url(images/img_bg_2.jpg)"},attrs:{"data-animate-effect":"fadeInLeft"}},[_c('div',{staticClass:"about-img-2 animate-box",staticStyle:{"background-image":"url(/images/profile/myphoto.jpg)"},attrs:{"data-animate-effect":"fadeInRight"}})])]),_vm._v(" "),_c('div',{staticClass:"col-md-6 animate-box",attrs:{"data-animate-effect":"fadeInLeft"}},[_c('div',{staticClass:"about-desc"},[_c('span',{staticClass:"heading-meta"},[_vm._v("Welcome & Introduce")]),_vm._v(" "),_c('h3',[_vm._v("Vadym Kuznetsov")]),_vm._v(" "),_c('p',[_vm._v("I am a developer of web platforms in PHP and Python languages.")])]),_vm._v(" "),_c('div',{staticClass:"fancy-collapse-panel"},[_c('div',{staticClass:"panel-group",attrs:{"id":"accordion","role":"tablist","aria-multiselectable":"true"}},[_c('div',{staticClass:"panel panel-default"},[_c('div',{staticClass:"panel-heading",attrs:{"role":"tab","id":"headingOne"}},[_c('h4',{staticClass:"panel-title"},[_c('a',{attrs:{"data-toggle":"collapse","data-parent":"#accordion","href":"#collapseOne","aria-expanded":"true","aria-controls":"collapseOne"}},[_vm._v("Why choose me?\n                                    ")])])]),_vm._v(" "),_c('div',{staticClass:"panel-collapse collapse in",attrs:{"id":"collapseOne","role":"tabpanel","aria-labelledby":"headingOne"}},[_c('div',{staticClass:"panel-body"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-6"},[_c('p',[_vm._v("Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. ")])]),_vm._v(" "),_c('div',{staticClass:"col-md-6"},[_c('p',[_vm._v("Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.")])])])])])]),_vm._v(" "),_c('div',{staticClass:"panel panel-default"},[_c('div',{staticClass:"panel-heading",attrs:{"role":"tab","id":"headingTwo"}},[_c('h4',{staticClass:"panel-title"},[_c('a',{staticClass:"collapsed",attrs:{"data-toggle":"collapse","data-parent":"#accordion","href":"#collapseTwo","aria-expanded":"false","aria-controls":"collapseTwo"}},[_vm._v("What I do?\n                                    ")])])]),_vm._v(" "),_c('div',{staticClass:"panel-collapse collapse",attrs:{"id":"collapseTwo","role":"tabpanel","aria-labelledby":"headingTwo"}},[_c('div',{staticClass:"panel-body"},[_c('p',[_vm._v("Far far away, behind the word "),_c('strong',[_vm._v("mountains")]),_vm._v(", far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.")]),_vm._v(" "),_c('ul',[_c('li',[_vm._v("Separated they live in Bookmarksgrove right")]),_vm._v(" "),_c('li',[_vm._v("Separated they live in Bookmarksgrove right")])])])])]),_vm._v(" "),_c('div',{staticClass:"panel panel-default"},[_c('div',{staticClass:"panel-heading",attrs:{"role":"tab","id":"headingThree"}},[_c('h4',{staticClass:"panel-title"},[_c('a',{staticClass:"collapsed",attrs:{"data-toggle":"collapse","data-parent":"#accordion","href":"#collapseThree","aria-expanded":"false","aria-controls":"collapseThree"}},[_vm._v("My Specialties\n                                    ")])])]),_vm._v(" "),_c('div',{staticClass:"panel-collapse collapse",attrs:{"id":"collapseThree","role":"tabpanel","aria-labelledby":"headingThree"}},[_c('div',{staticClass:"panel-body"},[_c('p',[_vm._v("Far far away, behind the word "),_c('strong',[_vm._v("mountains")]),_vm._v(", far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.")])])])])])])])])])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1032461c", __vue__options__)
+    hotAPI.createRecord("data-v-2a9be620", __vue__options__)
   } else {
-    hotAPI.reload("data-v-1032461c", __vue__options__)
+    hotAPI.reload("data-v-2a9be620", __vue__options__)
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":5}],5:[function(require,module,exports){
@@ -8556,14 +8559,14 @@ exports.reload = tryWrap(function (id, options) {
 })
 
 },{}],6:[function(require,module,exports){
-const HomeComponent = require('../components/home.vue');
+const AboutComponent = require('../components/about.vue');
 const VueAbout = { template: '<div id="colorlib-main"><app-about></app-about></div>'};
 const VueServices = { template: '<div id="colorlib-main"><app-services></app-services></div>'};
 const VueBlog = { template: '<div id="colorlib-main"><app-blog></app-blog></div>'};
 const VueWork = { template: '<div id="colorlib-main"><app-work></app-work></div>'};
 const VueContact = { template: '<div id="colorlib-main"><app-contact-page></app-contact-page></div>'};
 const routes = [
-    { path: '/', component: HomeComponent },
+    { path: '/', component: AboutComponent },
     { path: '/about', component: VueAbout },
     { path: '/services', component: VueServices },
     { path: '/blog', component: VueBlog },
@@ -8576,4 +8579,4 @@ const router = new VueRouter({
 const app = new Vue({
     router
 }).$mount('#colorlib-page')
-},{"../components/home.vue":4}]},{},[6]);
+},{"../components/about.vue":4}]},{},[6]);
