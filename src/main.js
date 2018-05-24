@@ -1,4 +1,4 @@
-const HomeComponent = require('../components/about.vue');
+const HomeComponent = require('../components/home.vue');
 const VueAbout = { template: '<div id="colorlib-main"><app-about></app-about></div>'};
 const VueServices = { template: '<div id="colorlib-main"><app-services></app-services></div>'};
 const VueBlog = { template: '<div id="colorlib-main"><app-blog></app-blog></div>'};
