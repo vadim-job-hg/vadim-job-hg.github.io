@@ -1,15 +1,16 @@
+
+
 const AboutComponent = require('../components/about.vue');
-const VueAbout = { template: '<div id="colorlib-main"><app-about></app-about></div>'};
-const VueServices = { template: '<div id="colorlib-main"><app-services></app-services></div>'};
-const VueBlog = { template: '<div id="colorlib-main"><app-blog></app-blog></div>'};
-const VueWork = { template: '<div id="colorlib-main"><app-work></app-work></div>'};
+const ServicesComponent = require('../components/services.vue');
+const BlogComponent = require('../components/blog.vue');
+const WorkComponent = require('../components/work.vue');
 const VueContact = { template: '<div id="colorlib-main"><app-contact-page></app-contact-page></div>'};
 const routes = [
     { path: '/', component: AboutComponent },
-    { path: '/about', component: VueAbout },
-    { path: '/services', component: VueServices },
-    { path: '/blog', component: VueBlog },
-    { path: '/work', component: VueWork },
+    { path: '/about', component: AboutComponent },
+    { path: '/services', component: ServicesComponent },
+    { path: '/blog', component: BlogComponent },
+    { path: '/work', component: WorkComponent },
     { path: '/contact', component: VueContact }
 ];
 const router = new VueRouter({
@@ -17,4 +18,4 @@ const router = new VueRouter({
 });
 const app = new Vue({
     router
-}).$mount('#colorlib-page')
+}).$mount('#colorlib-page');
