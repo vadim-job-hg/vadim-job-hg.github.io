@@ -194,8 +194,8 @@ Vue.component('app-about', {
 				<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 					<div class="about-desc">
 						<span class="heading-meta">Welcome &amp; Introduce</span>
-						<h3>Hola! my name is Louie Jie!</h3>
-						<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+						<h3>Vadym Kuznetsov</h3>
+						<p>I am a developer of web platforms in PHP and Python languages.</p>
 					</div>
 					<div class="fancy-collapse-panel">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
