@@ -8316,7 +8316,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-2a9be620", __vue__options__)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":8}],5:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":9}],5:[function(require,module,exports){
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8331,7 +8331,22 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-05be675f", __vue__options__)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":8}],6:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":9}],6:[function(require,module,exports){
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"colorlib-main"}},[_c('div',{staticClass:"colorlib-contact"},[_c('div',{staticClass:"container-fluid"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-12"},[_c('span',{staticClass:"heading-meta"},[_vm._v("Read")]),_vm._v(" "),_c('h2',{staticClass:"colorlib-heading animate-box",attrs:{"data-animate-effect":"fadeInLeft"}},[_vm._v("Get in Touch")])])]),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-5 col-md-push-6"},[_c('div',{staticClass:"colorlib-feature colorlib-feature-sm animate-box",attrs:{"data-animate-effect":"fadeInLeft"}},[_c('div',{staticClass:"colorlib-icon"},[_c('i',{staticClass:"icon-mail6"})]),_vm._v(" "),_c('div',{staticClass:"colorlib-text"},[_c('p',[_c('a',{attrs:{"href":"mailto::vadimjobhg86@gmail.com"}},[_vm._v("vadimjobhg86@gmail.com")])])])]),_vm._v(" "),_c('div',{staticClass:"colorlib-feature colorlib-feature-sm animate-box",attrs:{"data-animate-effect":"fadeInLeft"}},[_c('div',{staticClass:"colorlib-icon"},[_c('i',{staticClass:"icon-map"})]),_vm._v(" "),_c('div',{staticClass:"colorlib-text"},[_c('p',[_vm._v("Ukraine Kharkiv")])])]),_vm._v(" "),_c('div',{staticClass:"colorlib-feature colorlib-feature-sm animate-box",attrs:{"data-animate-effect":"fadeInLeft"}},[_c('div',{staticClass:"colorlib-icon"},[_c('i',{staticClass:"icon-social-skype"})]),_vm._v(" "),_c('div',{staticClass:"colorlib-text"},[_c('p',[_c('a',{attrs:{"href":"skype:vadimus_hg?chat"}},[_vm._v("vadimus_hg")])])])])]),_vm._v(" "),_c('div',{staticClass:"col-md-7 col-md-pull-5"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-10 col-md-offset-1 col-md-pull-1 animate-box",attrs:{"data-animate-effect":"fadeInLeft"}},[_c('form',{attrs:{"action":"https://formspree.io/vadimjobhg86@gmail.com","method":"POST"}},[_c('div',{staticClass:"form-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"text","name":"","placeholder":"Name"}})]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('input',{staticClass:"form-control",attrs:{"type":"email","name":"_replyto","placeholder":"Email"}})]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('textarea',{staticClass:"form-control",attrs:{"name":"message","id":"message","cols":"30","rows":"7","placeholder":"Message"}})]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('input',{staticClass:"btn btn-primary btn-send-message",attrs:{"type":"submit","value":"Send Message"}}),_vm._v(" "),_c('input',{attrs:{"type":"hidden","name":"_subject","value":"contact_me"}}),_vm._v(" "),_c('input',{attrs:{"type":"hidden","name":"_next","value":"http://vadim-job-hg.github.io/#/thanks"}})])])])])])])])]),_vm._v(" "),_c('div',{attrs:{"id":"map"}})])}]
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-14909b1a", __vue__options__)
+  } else {
+    hotAPI.reload("data-v-14909b1a", __vue__options__)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":9}],7:[function(require,module,exports){
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8346,7 +8361,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-e39620ca", __vue__options__)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":8}],7:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":9}],8:[function(require,module,exports){
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8361,7 +8376,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-2f40af4e", __vue__options__)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":8}],8:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":9}],9:[function(require,module,exports){
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -8603,21 +8618,19 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],9:[function(require,module,exports){
-
-
+},{}],10:[function(require,module,exports){
 const AboutComponent = require('../components/about.vue');
 const ServicesComponent = require('../components/services.vue');
 const BlogComponent = require('../components/blog.vue');
 const WorkComponent = require('../components/work.vue');
-const VueContact = { template: '<div id="colorlib-main"><app-contact-page></app-contact-page></div>'};
+const ContactComponent = require('../components/contact.vue');
 const routes = [
     { path: '/', component: AboutComponent },
     { path: '/about', component: AboutComponent },
     { path: '/services', component: ServicesComponent },
     { path: '/blog', component: BlogComponent },
     { path: '/work', component: WorkComponent },
-    { path: '/contact', component: VueContact }
+    { path: '/contact', component: ContactComponent }
 ];
 const router = new VueRouter({
     routes:routes // сокращение от `routes: routes`
@@ -8625,4 +8638,4 @@ const router = new VueRouter({
 const app = new Vue({
     router
 }).$mount('#colorlib-page');
-},{"../components/about.vue":4,"../components/blog.vue":5,"../components/services.vue":6,"../components/work.vue":7}]},{},[9]);
+},{"../components/about.vue":4,"../components/blog.vue":5,"../components/contact.vue":6,"../components/services.vue":7,"../components/work.vue":8}]},{},[10]);
