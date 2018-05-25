@@ -11,5 +11,5 @@
 </template>
 
 <script>
-    setTimeout(function(){ window.location.href = "/#/"; }, 10000);
+    //setTimeout(function(){ window.location.href = "/#/"; }, 10000);
 </script>
