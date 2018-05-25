@@ -1,5 +1,7 @@
-Vue.component('app-nav', {
-    template: `<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+<template>
+<div>
+<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <h1 id="colorlib-logo"><a href="index.html"><span>Wo</span><span>rk</span></a></h1>
         <nav id="colorlib-main-menu" role="navigation">
             <ul>
@@ -23,14 +25,6 @@ Vue.component('app-nav', {
     <li><a href="https://github.com/vadim-job-hg/" target="_blank"><i class="icon-github"></i></a></li>
 </ul>
 </div>
-</aside>`,
-    data: function () {
-        return {
-            year: new Date().getFullYear()
-        }
-    }
-});
-
-Vue.component('app-side', {
-    template: ''
-});
+</aside>
+</div>
+</template>
