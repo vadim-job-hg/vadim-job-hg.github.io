@@ -8350,7 +8350,12 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
 ;(function(){
 'use strict';
 
-var About = require('./about.vue');
+var AboutComponent = require('../components/about.vue');
+var ServicesComponent = require('../components/services.vue');
+var BlogComponent = require('../components/blog.vue');
+var WorkComponent = require('../components/work.vue');
+var ContactComponent = require('../components/contact.vue');
+var ThanksComponent = require('../components/thanks.vue');
 
 module.exports = {
   data: function data() {
@@ -8359,14 +8364,15 @@ module.exports = {
     };
   },
   components: {
-    About: About
+    AboutComponent: AboutComponent,
+    ServicesComponent: ServicesComponent
   }
 };
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('about')],1)}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('about-component'),_vm._v(" "),_c('services-component')],1)}
 __vue__options__.staticRenderFns = []
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -8378,7 +8384,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-1032461c", __vue__options__)
   }
 })()}
-},{"./about.vue":4,"vue":3,"vue-hot-reload-api":11}],8:[function(require,module,exports){
+},{"../components/about.vue":4,"../components/blog.vue":5,"../components/contact.vue":6,"../components/services.vue":8,"../components/thanks.vue":9,"../components/work.vue":10,"vue":3,"vue-hot-reload-api":11}],8:[function(require,module,exports){
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
