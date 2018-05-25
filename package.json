@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/vadim-job-hg/vadim-job-hg.github.io#readme",
   "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
     "vueify": "^9.4.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4"

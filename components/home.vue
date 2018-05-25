@@ -1,1 +1,5 @@
-<template><app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact><template>
+<template>
+<div>
+<app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact>
+</div>
+<template>
