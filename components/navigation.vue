@@ -28,3 +28,10 @@
 </aside>
 </div>
 </template>
+<script type="text/javascript">
+module.exports = {
+  data: () => ({
+    year: new Date().getFullYear()
+  })
+};
+</script>

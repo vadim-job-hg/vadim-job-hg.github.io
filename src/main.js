@@ -5,6 +5,7 @@ const BlogComponent = require('../components/blog.vue');
 const WorkComponent = require('../components/work.vue');
 const ContactComponent = require('../components/contact.vue');
 const ThanksComponent = require('../components/thanks.vue');
+const AppSide = require('../components/navigation.vue');
 const routes = [
     { path: '/', component: HomeComponent },
     { path: '/about', component: AboutComponent },
@@ -18,5 +19,8 @@ const router = new VueRouter({
     routes:routes // сокращение от `routes: routes`
 });
 const app = new Vue({
-    router
+    router:router,
+    components: {
+        AppSide
+    }
 }).$mount('#colorlib-page');

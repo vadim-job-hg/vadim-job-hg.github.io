@@ -16,11 +16,7 @@ const WorkComponent = require('../components/work.vue');
 const ContactComponent = require('../components/contact.vue');
 const ThanksComponent = require('../components/thanks.vue');
 const Contact = require('../components/contact-link.vue');
-//const VueHome = { template: '<div id="colorlib-main"><app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact></div>' }
 module.exports = {
-  data: () => ({
-    colour: 'Red'
-  }),
   components: {
     AboutComponent,
     ServicesComponent,
