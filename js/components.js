@@ -32,5 +32,5 @@ Vue.component('app-nav', {
 });
 
 Vue.component('app-side', {
-    template: ''
+    template: '<div><a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a><app-nav></app-nav></div>'
 });
