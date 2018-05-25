@@ -1,5 +1,4 @@
 <template>
-<div id="colorlib-main">
     <div class="colorlib-contact">
         <div class="container-fluid">
             <div class="row">
@@ -64,5 +63,4 @@
         </div>
     </div>
     <div id="map"></div>
-</div>
 </template>
