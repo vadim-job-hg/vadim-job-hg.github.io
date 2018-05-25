@@ -2,6 +2,9 @@
 <div>
     <about-component></about-component>
     <services-component></services-component>
+    <work-component></work-component>
+    <blog-component></blog-component>
+    <contact></contact>
 </div>
 </template>
 
@@ -12,7 +15,7 @@ const BlogComponent = require('../components/blog.vue');
 const WorkComponent = require('../components/work.vue');
 const ContactComponent = require('../components/contact.vue');
 const ThanksComponent = require('../components/thanks.vue');
-
+const Contact = require('../components/contact-link.vue');
 //const VueHome = { template: '<div id="colorlib-main"><app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact></div>' }
 module.exports = {
   data: () => ({
@@ -20,7 +23,10 @@ module.exports = {
   }),
   components: {
     AboutComponent,
-    ServicesComponent
+    ServicesComponent,
+    WorkComponent,
+    BlogComponent,
+    Contact
   }
 };
 </script>
