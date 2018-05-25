@@ -1,5 +1,18 @@
 <template>
 <div>
-<app-about></app-about><app-services></app-services><app-work></app-work><app-blog></app-blog><app-contact></app-contact>
+    <about></about>
 </div>
-<template>
+</template>
+
+<script type="text/javascript">
+const About = require('./about.vue');
+
+module.exports = {
+  data: () => ({
+    colour: 'Red'
+  }),
+  components: {
+    About
+  }
+};
+</script>

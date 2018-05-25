@@ -1,3 +1,4 @@
+const HomeComponent = require('../components/home.vue');
 const AboutComponent = require('../components/about.vue');
 const ServicesComponent = require('../components/services.vue');
 const BlogComponent = require('../components/blog.vue');
@@ -5,7 +6,7 @@ const WorkComponent = require('../components/work.vue');
 const ContactComponent = require('../components/contact.vue');
 const ThanksComponent = require('../components/thanks.vue');
 const routes = [
-    { path: '/', component: AboutComponent },
+    { path: '/', component: HomeComponent },
     { path: '/about', component: AboutComponent },
     { path: '/services', component: ServicesComponent },
     { path: '/blog', component: BlogComponent },
