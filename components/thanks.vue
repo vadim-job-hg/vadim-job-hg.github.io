@@ -3,5 +3,5 @@
 </template>
 
 <script>
-    alert('1');
+    setTimeout(function(){ window.location.href = "/#/"; }, 10000);
 </script>
