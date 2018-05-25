@@ -186,7 +186,7 @@
 	// Document on load.
 	$(function(){
 		fullHeight();
-		//contentWayPoint();
+		contentWayPoint();
 		burgerMenu();
 		mobileMenuOutsideClick();
 		sliderMain();
