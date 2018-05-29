@@ -8302,6 +8302,181 @@ module.exports = Vue;
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
 },{"_process":1,"timers":2}],4:[function(require,module,exports){
+;(function(){
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8317,6 +8492,181 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":13}],5:[function(require,module,exports){
+;(function(){
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8332,6 +8682,181 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":13}],6:[function(require,module,exports){
+;(function(){
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"colorlib-bg-color",attrs:{"id":"get-in-touch"}},[_c('div',{staticClass:"colorlib-narrow-content"},[_vm._m(0),_vm._v(" "),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-md-6 col-md-offset-3 col-md-pull-3 animate-box fadeInLeft animated",attrs:{"data-animate-effect":"fadeInLeft"}},[_c('p',{staticClass:"colorlib-lead"},[_vm._v("Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.")]),_vm._v(" "),_c('p',[_c('router-link',{staticClass:"router-link-exact-active router-link-active",attrs:{"to":"/contact"}},[_vm._v("Contact me!")])],1)])])])])}
@@ -8347,6 +8872,181 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":13}],7:[function(require,module,exports){
+;(function(){
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8399,15 +9099,178 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
 })()}
 },{"../components/about.vue":4,"../components/blog.vue":5,"../components/contact-link.vue":6,"../components/contact.vue":7,"../components/services.vue":10,"../components/thanks.vue":11,"../components/work.vue":12,"vue":3,"vue-hot-reload-api":13}],9:[function(require,module,exports){
 ;(function(){
-"use strict";
+'use strict';
 
-module.exports = {
-  data: function data() {
-    return {
-      year: new Date().getFullYear()
-    };
-  }
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
 };
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
@@ -8425,6 +9288,181 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":13}],10:[function(require,module,exports){
+;(function(){
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
@@ -8441,7 +9479,178 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
 })()}
 },{"vue":3,"vue-hot-reload-api":13}],11:[function(require,module,exports){
 ;(function(){
-"use strict";
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
 })()
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
@@ -8459,6 +9668,181 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":13}],12:[function(require,module,exports){
+;(function(){
+'use strict';
+
+var contentWayPoint = function contentWayPoint() {
+	var i = 0;
+	$('.animate-box').waypoint(function (direction) {
+
+		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+
+			i++;
+
+			$(this.element).addClass('item-animate');
+			setTimeout(function () {
+
+				$('body .animate-box.item-animate').each(function (k) {
+					var el = $(this);
+					setTimeout(function () {
+						var effect = el.data('animate-effect');
+						if (effect === 'fadeIn') {
+							el.addClass('fadeIn animated');
+						} else if (effect === 'fadeInLeft') {
+							el.addClass('fadeInLeft animated');
+						} else if (effect === 'fadeInRight') {
+							el.addClass('fadeInRight animated');
+						} else {
+							el.addClass('fadeInUp animated');
+						}
+
+						el.removeClass('item-animate');
+					}, k * 200, 'easeInOutExpo');
+				});
+			}, 100);
+		}
+	}, { offset: '85%' });
+};
+
+;(function () {
+
+	'use strict';
+
+	var isMobile = {
+		Android: function Android() {
+			return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function BlackBerry() {
+			return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function iOS() {
+			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function Opera() {
+			return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function Windows() {
+			return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function any() {
+			return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+		}
+	};
+
+	var fullHeight = function fullHeight() {
+
+		if (!isMobile.any()) {
+			$('.js-fullheight').css('height', $(window).height());
+			$(window).resize(function () {
+				$('.js-fullheight').css('height', $(window).height());
+			});
+		}
+	};
+
+	var burgerMenu = function burgerMenu() {
+
+		$('.js-colorlib-nav-toggle').on('click', function (event) {
+			event.preventDefault();
+			var $this = $(this);
+
+			if ($('body').hasClass('offcanvas')) {
+				$this.removeClass('active');
+				$('body').removeClass('offcanvas');
+			} else {
+				$this.addClass('active');
+				$('body').addClass('offcanvas');
+			}
+		});
+	};
+
+	var mobileMenuOutsideClick = function mobileMenuOutsideClick() {
+
+		$(document).click(function (e) {
+			var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+
+				if ($('body').hasClass('offcanvas')) {
+
+					$('body').removeClass('offcanvas');
+					$('.js-colorlib-nav-toggle').removeClass('active');
+				}
+			}
+		});
+
+		$(window).scroll(function () {
+			if ($('body').hasClass('offcanvas')) {
+
+				$('body').removeClass('offcanvas');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+			}
+		});
+	};
+
+	var sliderMain = function sliderMain() {
+
+		$('#colorlib-hero .flexslider').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function start() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function before() {
+				setTimeout(function () {
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+		});
+	};
+
+	var stickyFunction = function stickyFunction() {
+
+		var h = $('.image-content').outerHeight();
+
+		if ($(window).width() <= 992) {
+			$("#sticky_item").trigger("sticky_kit:detach");
+		} else {
+			$('.sticky-parent').removeClass('stick-detach');
+			$("#sticky_item").trigger("sticky_kit:detach");
+			$("#sticky_item").trigger("sticky_kit:unstick");
+		}
+
+		$(window).resize(function () {
+			var h = $('.image-content').outerHeight();
+			$('.sticky-parent').css('height', h);
+
+			if ($(window).width() <= 992) {
+				$("#sticky_item").trigger("sticky_kit:detach");
+			} else {
+				$('.sticky-parent').removeClass('stick-detach');
+				$("#sticky_item").trigger("sticky_kit:detach");
+				$("#sticky_item").trigger("sticky_kit:unstick");
+
+				$("#sticky_item").stick_in_parent();
+			}
+		});
+
+		$('.sticky-parent').css('height', h);
+
+		$("#sticky_item").stick_in_parent();
+	};
+
+	$(function () {
+		fullHeight();
+		contentWayPoint();
+		burgerMenu();
+		mobileMenuOutsideClick();
+		sliderMain();
+		stickyFunction();
+	});
+})();
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}

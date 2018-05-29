@@ -9,7 +9,4 @@
         </div>
     </div>
 </template>
-
-<script>
-    //setTimeout(function(){ window.location.href = "/#/"; }, 10000);
-</script>
+<script src="../js/main.js"></script>

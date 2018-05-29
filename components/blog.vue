@@ -124,3 +124,4 @@
         </div>
     </div>
 </template>
+<script src="../js/main.js"></script>
