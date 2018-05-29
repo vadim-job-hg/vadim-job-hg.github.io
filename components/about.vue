@@ -72,3 +72,7 @@
     </div>
 </div>
 </template>
+
+<script>
+contentWayPoint();
+</script>
