@@ -77,6 +77,7 @@ function loadFilesFromServer(map) {
         xhr.addEventListener('load',  async() => {
             let blob = xhr.response;
             blob.name = filePathOrUrl.replace(/^.*[\\\/]/, '');
+            blob.url = filePathOrUrl;
             await handleFile(blob);
         });
         xhr.send();
