@@ -14,7 +14,7 @@ git add bundle.js
 
 python2 files generate.py
 
-git commit
+git commit -m "heatmap update"
 git push origin master
 
 git checkout -
