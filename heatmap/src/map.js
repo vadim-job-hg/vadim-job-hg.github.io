@@ -234,13 +234,13 @@ export default class GpxMap {
     async markerClick(image) {
         const latitude = await image.latitude();
         const longitude = await image.longitude();
-        const imageData = await image.getImageData();
+        //const imageData = await image.getImageData();
 
         let latlng = leaflet.latLng(latitude, longitude);
 
         leaflet.popup({minWidth: 512})
             .setLatLng(latlng)
-            .setContent(`<img src="${imageData}" width="512" height="100%">`)
+            .setContent(`<img src="${image.imageFile.url}" width="512" height="100%">`)
             .addTo(this.map);
     }
 

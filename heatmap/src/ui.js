@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import picoModal from 'picomodal';
 import extractTracks from './track';
 import Image from './image';
-
+import * as files from '../files/files.json';
 const AVAILABLE_THEMES = [
     'CartoDB.DarkMatter',
     'CartoDB.DarkMatterNoLabels',
@@ -67,8 +67,9 @@ href="http://library.nothingness.org/articles/SI/en/display/314">[1]</a></cite>
 `
 };
 
-function loadFilesFromServer(map, files) {
+function loadFilesFromServer(map) {
     map.map.panTo([50, 36.15], {noMoveStart: true, animate: true});
+    //let modal = buildLoader(files.count);
     const getFileObject  = async (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', filePathOrUrl);
@@ -76,18 +77,11 @@ function loadFilesFromServer(map, files) {
         xhr.addEventListener('load',  async() => {
             let blob = xhr.response;
             blob.name = filePathOrUrl.replace(/^.*[\\\/]/, '');
+            blob.url = filePathOrUrl;
             await handleFile(blob);
         });
         xhr.send();
     };
-    let count = 0;
-    let load_container = document.getElementById('load_container');
-    let load_text = document.getElementById('load_text');
-    const addLoaded = function(){
-        count = count + 1;
-        load_text.innerText = Math.round((count/4)*100).toString()+"%";
-    };
-
 
     const handleImage = async file => {
         const image = new Image(file);
@@ -114,16 +108,9 @@ function loadFilesFromServer(map, files) {
         }
     };
 
-    Promise.all(files['gpx'].map(getFileObject)).then(value => {
-        addLoaded();
+    Promise.all(files['files'].map(getFileObject)).then(value => {
+        //modal.finished();
     });
-
-    files['tcx'].map(getFileObject);
-
-    files['fit'].map(getFileObject);
-
-    files['jpg'].map(getFileObject);
-
     //load_container.remove();
 }
 
@@ -320,12 +307,5 @@ export function showModal(type) {
 
 
 export function initialize(map) {
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        let files = JSON.parse(this.responseText);
-        console.log(files);
-        loadFilesFromServer(map, files);
-    };
-    xmlhttp.open('GET', 'files/files.json', true);
-    xmlhttp.send();
+    loadFilesFromServer(map);
 }
