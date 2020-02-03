@@ -3,17 +3,19 @@
 set -e
 
 git fetch
-git checkout gh-pages
-git pull origin gh-pages
+git checkout master
+git pull origin master
 
 git merge origin/master --commit --stat
 
 npm run build
 
 git add bundle.js
-git commit
 
-git push origin gh-pages
+python2 files generate.py
+
+git commit
+git push origin master
 
 git checkout -
 
