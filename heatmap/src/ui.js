@@ -69,6 +69,7 @@ href="http://library.nothingness.org/articles/SI/en/display/314">[1]</a></cite>
 
 function loadFilesFromServer(map) {
     map.map.panTo([50, 36.15], {noMoveStart: true, animate: true});
+    //let modal = buildLoader(files.count);
     const getFileObject  = async (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', filePathOrUrl);
@@ -80,14 +81,6 @@ function loadFilesFromServer(map) {
         });
         xhr.send();
     };
-    let count = 0;
-    let load_container = document.getElementById('load_container');
-    let load_text = document.getElementById('load_text');
-    const addLoaded = function(){
-        count = count + 1;
-        load_text.innerText = Math.round((count/4)*100).toString()+"%";
-    };
-
 
     const handleImage = async file => {
         const image = new Image(file);
@@ -114,16 +107,9 @@ function loadFilesFromServer(map) {
         }
     };
 
-    Promise.all(files['gpx'].map(getFileObject)).then(value => {
-        //addLoaded();
+    Promise.all(files['files'].map(getFileObject)).then(value => {
+        //modal.finished();
     });
-
-    files['tcx'].map(getFileObject);
-
-    files['fit'].map(getFileObject);
-
-    files['jpg'].map(getFileObject);
-
     //load_container.remove();
 }
 
