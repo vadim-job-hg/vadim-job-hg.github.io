@@ -2,7 +2,7 @@ import 'babel-polyfill';
 import picoModal from 'picomodal';
 import extractTracks from './track';
 import Image from './image';
-
+import * as files from '../files/files.json';
 const AVAILABLE_THEMES = [
     'CartoDB.DarkMatter',
     'CartoDB.DarkMatterNoLabels',
@@ -67,7 +67,7 @@ href="http://library.nothingness.org/articles/SI/en/display/314">[1]</a></cite>
 `
 };
 
-function loadFilesFromServer(map, files) {
+function loadFilesFromServer(map) {
     map.map.panTo([50, 36.15], {noMoveStart: true, animate: true});
     const getFileObject  = async (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
@@ -115,7 +115,7 @@ function loadFilesFromServer(map, files) {
     };
 
     Promise.all(files['gpx'].map(getFileObject)).then(value => {
-        addLoaded();
+        //addLoaded();
     });
 
     files['tcx'].map(getFileObject);
@@ -320,12 +320,5 @@ export function showModal(type) {
 
 
 export function initialize(map) {
-    let xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        let files = JSON.parse(this.responseText);
-        console.log(files);
-        loadFilesFromServer(map, files);
-    };
-    xmlhttp.open('GET', 'files/files.json', true);
-    xmlhttp.send();
+    loadFilesFromServer(map);
 }
