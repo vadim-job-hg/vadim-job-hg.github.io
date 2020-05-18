@@ -108,8 +108,8 @@ function loadFilesFromServer(map) {
         }
     };
 
-    for(let index in files['files']) {
-        getFileObject(files['files'][index]);
+    for(let file of files['files']) {
+        getFileObject(file);
     }
     //load_container.remove();
 }
