@@ -108,8 +108,8 @@ function loadFilesFromServer(map) {
         }
     };
 
-    files['files'].forEach(key => {
-        getFileObject(files['files'][key]);
+    files['files'].forEach(file => {
+        getFileObject(file);
     });
     //load_container.remove();
 }
