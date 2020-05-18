@@ -70,7 +70,7 @@ href="http://library.nothingness.org/articles/SI/en/display/314">[1]</a></cite>
 function loadFilesFromServer(map) {
     map.map.panTo([50, 36.15], {noMoveStart: true, animate: true});
     //let modal = buildLoader(files.count);
-    const getFileObject  = async (filePathOrUrl) => {
+    const getFileObject  = (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', filePathOrUrl);
         xhr.responseType = 'blob';
