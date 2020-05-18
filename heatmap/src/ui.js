@@ -91,7 +91,9 @@ function loadFilesFromServer(map) {
     };
 
     const handleTrackFile = file => {
-        for (const track of extractTracks(file)) {
+        var tracks = extractTracks(file);
+        console.log(tracks);
+        for (const track of tracks) {
             track.filename = file.name;
             map.addTrack(track);
         }
