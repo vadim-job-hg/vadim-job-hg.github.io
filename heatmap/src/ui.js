@@ -108,7 +108,9 @@ function loadFilesFromServer(map) {
         }
     };
 
-    files['files'].each(getFileObject);
+    for(let index in files['files']) {
+        getFileObject(files['files'][index]);
+    }
     //load_container.remove();
 }
 
