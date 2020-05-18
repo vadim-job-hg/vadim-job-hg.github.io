@@ -109,6 +109,7 @@ function loadFilesFromServer(map) {
     };
 
     files['files'].forEach(file => {
+        console.log(file);
         getFileObject(file);
     });
     //load_container.remove();
