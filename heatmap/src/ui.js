@@ -98,14 +98,10 @@ function loadFilesFromServer(map) {
     };
 
     const handleFile = file => {
-        try {
-            if (/\.jpe?g$/i.test(file.name)) {
-                return handleImage(file);
-            }
-            return handleTrackFile(file);
-        } catch (err) {
-            console.error(file, err);
+        if (/\.jpe?g$/i.test(file.name)) {
+            return handleImage(file);
         }
+        return handleTrackFile(file);
     };
 
     files['files'].forEach(file => {
