@@ -90,26 +90,25 @@ function loadFilesFromServer(map) {
         map.addImage(image);
     };
 
-    const handleTrackFile = file => {
-        var tracks = extractTracks(file);
-        console.log(tracks);
-        for (const track of tracks) {
+    const handleTrackFile = (file) => {
+        for (const track of extractTracks(file)) {
             track.filename = file.name;
             map.addTrack(track);
         }
     };
 
     const handleFile = file => {
-        if (/\.jpe?g$/i.test(file.name)) {
-            return handleImage(file);
+        try {
+            if (/\.jpe?g$/i.test(file.name)) {
+                return handleImage(file);
+            }
+            return handleTrackFile(file);
+        } catch (err) {
+            console.error(file, err);
         }
-        return handleTrackFile(file);
     };
 
-    files['files'].forEach(file => {
-        console.log(file);
-        getFileObject(file);
-    });
+    files['files'].promiseAll(getFileObject);
     //load_container.remove();
 }
 
