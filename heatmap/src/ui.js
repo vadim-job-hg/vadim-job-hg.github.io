@@ -108,7 +108,10 @@ function loadFilesFromServer(map) {
         }
     };
 
-    files['files'].each(getFileObject);
+    files['files'].reduce( async (previousPromise, nextID) => {
+        await previousPromise;
+        return getFileObject(nextID);
+    }, Promise.resolve());
     //load_container.remove();
 }
 
