@@ -90,7 +90,7 @@ function loadFilesFromServer(map) {
         map.addImage(image);
     };
 
-    const handleTrackFile = (file) => {
+    const handleTrackFile = file => {
         for (const track of extractTracks(file)) {
             track.filename = file.name;
             map.addTrack(track);
