@@ -74,41 +74,43 @@ function loadFilesFromServer(map) {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', filePathOrUrl);
         xhr.responseType = 'blob';
-        xhr.addEventListener('load',  () => {
+        xhr.addEventListener('load',  async() => {
             let blob = xhr.response;
             blob.name = filePathOrUrl.replace(/^.*[\\\/]/, '');
             blob.url = filePathOrUrl;
-            handleFile(blob);
+            await handleFile(blob);
         });
         xhr.send();
     };
 
-    const handleImage = file => {
+    const handleImage = async file => {
         const image = new Image(file);
-        const hasGeolocationData = image.hasGeolocationData();
+        const hasGeolocationData = await image.hasGeolocationData();
         if (!hasGeolocationData) { throw 'No geolocation data'; }
-        map.addImage(image);
+        await map.addImage(image);
     };
 
-    const handleTrackFile = (file) => {
-        for (const track of extractTracks(file)) {
+    const handleTrackFile = async (file) => {
+        for (const track of await extractTracks(file)) {
             track.filename = file.name;
             map.addTrack(track);
         }
     };
 
-    const handleFile = file => {
+    const handleFile = async file => {
         try {
             if (/\.jpe?g$/i.test(file.name)) {
-                return handleImage(file);
+                return await handleImage(file);
             }
-            return handleTrackFile(file);
+            return await handleTrackFile(file);
         } catch (err) {
             console.error(file, err);
         }
     };
 
-    files['files'].each(getFileObject);
+    Promise.all(files['files'].map(getFileObject)).then(value => {
+        //modal.finished();
+    });
     //load_container.remove();
 }
 
