@@ -9,6 +9,12 @@ for file in os.listdir(path):
 
 path = str(Path(__file__).parent.absolute())+"/tcx"
 for file in os.listdir(path):
+    if len(file)>25:
+        new_name,index = file[0:19]+"_1.tcx",1
+        while os.path.exists(os.path.join(path, new_name)):
+            index+=1
+            new_name = file[0:19]+'_'+str(index)+".tcx"
+        os.rename(os.path.join(path, file), os.path.join(path, new_name))
     files['files'].append('./files/tcx/'+file)
     files['count'] = files['count'] + 1
 
