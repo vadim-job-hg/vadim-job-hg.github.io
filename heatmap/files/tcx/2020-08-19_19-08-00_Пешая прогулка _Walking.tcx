@@ -1,0 +1,2321 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TrainingCenterDatabase xmlns:ns2="http://www.garmin.com/xmlschemas/UserProfile/v2" xmlns:ns4="http://www.garmin.com/xmlschemas/ProfileExtension/v1" xmlns:ns5="http://www.garmin.com/xmlschemas/ActivityGoals/v1" xmlns:tpx="http://www.garmin.com/xmlschemas/ActivityExtension/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2">
+  <Activities>
+    <Activity Sport="Other">
+      <Id>2020-08-19T16:08:00.000Z</Id>
+      <Lap StartTime="2020-08-19T16:08:00.000Z">
+        <TotalTimeSeconds>7392.0</TotalTimeSeconds>
+        <DistanceMeters>3147.0</DistanceMeters>
+        <MaximumSpeed>4.6</MaximumSpeed>
+        <Calories>0</Calories>
+        <AverageHeartRateBpm>
+          <Value>65</Value>
+        </AverageHeartRateBpm>
+        <MaximumHeartRateBpm>
+          <Value>112</Value>
+        </MaximumHeartRateBpm>
+        <Intensity>Active</Intensity>
+        <TriggerMethod>Manual</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2020-08-19T16:08:00.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.027318</LatitudeDegrees>
+              <LongitudeDegrees>36.328723</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>109.1</AltitudeMeters>
+            <DistanceMeters>0.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T16:59:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.027026</LatitudeDegrees>
+              <LongitudeDegrees>36.328464</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>110.8</AltitudeMeters>
+            <DistanceMeters>37.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:00:21.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02676</LatitudeDegrees>
+              <LongitudeDegrees>36.328681</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>111.1</AltitudeMeters>
+            <DistanceMeters>70.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:00:49.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.026703</LatitudeDegrees>
+              <LongitudeDegrees>36.32898</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>111.4</AltitudeMeters>
+            <DistanceMeters>92.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:01:20.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.026415</LatitudeDegrees>
+              <LongitudeDegrees>36.329926</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>111.8</AltitudeMeters>
+            <DistanceMeters>167.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:01:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02634</LatitudeDegrees>
+              <LongitudeDegrees>36.330098</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>111.8</AltitudeMeters>
+            <DistanceMeters>182.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:02:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.026318</LatitudeDegrees>
+              <LongitudeDegrees>36.330117</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>111.9</AltitudeMeters>
+            <DistanceMeters>185.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:02:46.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025961</LatitudeDegrees>
+              <LongitudeDegrees>36.330881</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>112.1</AltitudeMeters>
+            <DistanceMeters>253.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:03:22.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025812</LatitudeDegrees>
+              <LongitudeDegrees>36.331734</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>112.1</AltitudeMeters>
+            <DistanceMeters>316.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>84</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:03:48.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025763</LatitudeDegrees>
+              <LongitudeDegrees>36.331817</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>112.2</AltitudeMeters>
+            <DistanceMeters>324.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>84</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:04:14.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025574</LatitudeDegrees>
+              <LongitudeDegrees>36.332402</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>112.7</AltitudeMeters>
+            <DistanceMeters>371.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:04:49.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025544</LatitudeDegrees>
+              <LongitudeDegrees>36.332483</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>112.8</AltitudeMeters>
+            <DistanceMeters>378.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:05:30.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025145</LatitudeDegrees>
+              <LongitudeDegrees>36.333708</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>113.9</AltitudeMeters>
+            <DistanceMeters>476.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:06:16.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025126</LatitudeDegrees>
+              <LongitudeDegrees>36.333755</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>113.9</AltitudeMeters>
+            <DistanceMeters>480.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:07:01.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025003</LatitudeDegrees>
+              <LongitudeDegrees>36.334209</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>114.5</AltitudeMeters>
+            <DistanceMeters>515.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:07:21.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025001</LatitudeDegrees>
+              <LongitudeDegrees>36.334212</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>114.5</AltitudeMeters>
+            <DistanceMeters>515.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:07:41.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024759</LatitudeDegrees>
+              <LongitudeDegrees>36.335033</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>115.3</AltitudeMeters>
+            <DistanceMeters>580.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:08:23.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024883</LatitudeDegrees>
+              <LongitudeDegrees>36.335355</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.2</AltitudeMeters>
+            <DistanceMeters>607.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:08:57.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025125</LatitudeDegrees>
+              <LongitudeDegrees>36.335714</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>115.8</AltitudeMeters>
+            <DistanceMeters>644.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:09:24.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025575</LatitudeDegrees>
+              <LongitudeDegrees>36.336604</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>725.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:09:58.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025631</LatitudeDegrees>
+              <LongitudeDegrees>36.336646</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>732.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:10:26.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.026095</LatitudeDegrees>
+              <LongitudeDegrees>36.337055</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>791.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:11:10.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02609</LatitudeDegrees>
+              <LongitudeDegrees>36.337039</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>792.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:11:56.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.026113</LatitudeDegrees>
+              <LongitudeDegrees>36.337059</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>795.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:12:37.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.026013</LatitudeDegrees>
+              <LongitudeDegrees>36.337143</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>808.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:13:17.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025961</LatitudeDegrees>
+              <LongitudeDegrees>36.337127</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>116.3</AltitudeMeters>
+            <DistanceMeters>814.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:13:41.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024672</LatitudeDegrees>
+              <LongitudeDegrees>36.336707</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>115.3</AltitudeMeters>
+            <DistanceMeters>960.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:14:06.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024357</LatitudeDegrees>
+              <LongitudeDegrees>36.337289</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>115.3</AltitudeMeters>
+            <DistanceMeters>1014.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>4.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:14:55.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024228</LatitudeDegrees>
+              <LongitudeDegrees>36.337689</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>115.3</AltitudeMeters>
+            <DistanceMeters>1046.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:15:17.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024217</LatitudeDegrees>
+              <LongitudeDegrees>36.337734</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>115.3</AltitudeMeters>
+            <DistanceMeters>1049.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:15:50.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023674</LatitudeDegrees>
+              <LongitudeDegrees>36.339057</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>119.3</AltitudeMeters>
+            <DistanceMeters>1161.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:16:13.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023581</LatitudeDegrees>
+              <LongitudeDegrees>36.339525</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>119.3</AltitudeMeters>
+            <DistanceMeters>1196.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:16:37.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023446</LatitudeDegrees>
+              <LongitudeDegrees>36.339586</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>119.3</AltitudeMeters>
+            <DistanceMeters>1212.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:17:06.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023446</LatitudeDegrees>
+              <LongitudeDegrees>36.339579</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>119.3</AltitudeMeters>
+            <DistanceMeters>1213.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:17:31.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023464</LatitudeDegrees>
+              <LongitudeDegrees>36.339553</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>119.2</AltitudeMeters>
+            <DistanceMeters>1216.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:17:56.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023497</LatitudeDegrees>
+              <LongitudeDegrees>36.339748</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>119.2</AltitudeMeters>
+            <DistanceMeters>1230.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:18:27.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022821</LatitudeDegrees>
+              <LongitudeDegrees>36.341534</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>123.6</AltitudeMeters>
+            <DistanceMeters>1378.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:19:03.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022537</LatitudeDegrees>
+              <LongitudeDegrees>36.341761</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>124.2</AltitudeMeters>
+            <DistanceMeters>1414.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>83</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:19:42.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022585</LatitudeDegrees>
+              <LongitudeDegrees>36.341936</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>124.8</AltitudeMeters>
+            <DistanceMeters>1428.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:20:03.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.0226</LatitudeDegrees>
+              <LongitudeDegrees>36.341974</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>125.1</AltitudeMeters>
+            <DistanceMeters>1431.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:20:43.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02266</LatitudeDegrees>
+              <LongitudeDegrees>36.342314</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>126.0</AltitudeMeters>
+            <DistanceMeters>1456.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:21:11.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022656</LatitudeDegrees>
+              <LongitudeDegrees>36.342396</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>126.0</AltitudeMeters>
+            <DistanceMeters>1462.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:21:44.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022706</LatitudeDegrees>
+              <LongitudeDegrees>36.342725</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>126.5</AltitudeMeters>
+            <DistanceMeters>1486.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:22:14.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022756</LatitudeDegrees>
+              <LongitudeDegrees>36.342894</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>127.4</AltitudeMeters>
+            <DistanceMeters>1499.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:22:41.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023251</LatitudeDegrees>
+              <LongitudeDegrees>36.343784</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.3</AltitudeMeters>
+            <DistanceMeters>1583.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:23:02.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023405</LatitudeDegrees>
+              <LongitudeDegrees>36.345316</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.2</AltitudeMeters>
+            <DistanceMeters>1694.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>4.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:23:26.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023642</LatitudeDegrees>
+              <LongitudeDegrees>36.346584</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.2</AltitudeMeters>
+            <DistanceMeters>1789.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>4.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:24:03.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023423</LatitudeDegrees>
+              <LongitudeDegrees>36.346847</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>138.7</AltitudeMeters>
+            <DistanceMeters>1820.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>109</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:24:39.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023333</LatitudeDegrees>
+              <LongitudeDegrees>36.347185</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.4</AltitudeMeters>
+            <DistanceMeters>1846.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:25:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023288</LatitudeDegrees>
+              <LongitudeDegrees>36.347244</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.9</AltitudeMeters>
+            <DistanceMeters>1853.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:25:37.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023287</LatitudeDegrees>
+              <LongitudeDegrees>36.34723</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.6</AltitudeMeters>
+            <DistanceMeters>1854.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:26:07.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023285</LatitudeDegrees>
+              <LongitudeDegrees>36.347271</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.9</AltitudeMeters>
+            <DistanceMeters>1857.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:26:56.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023299</LatitudeDegrees>
+              <LongitudeDegrees>36.347317</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.1</AltitudeMeters>
+            <DistanceMeters>1861.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:27:18.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023299</LatitudeDegrees>
+              <LongitudeDegrees>36.347316</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.1</AltitudeMeters>
+            <DistanceMeters>1861.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:27:53.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023299</LatitudeDegrees>
+              <LongitudeDegrees>36.34729</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.1</AltitudeMeters>
+            <DistanceMeters>1863.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:28:16.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023299</LatitudeDegrees>
+              <LongitudeDegrees>36.347265</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.8</AltitudeMeters>
+            <DistanceMeters>1865.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:28:56.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023294</LatitudeDegrees>
+              <LongitudeDegrees>36.347247</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.8</AltitudeMeters>
+            <DistanceMeters>1866.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:29:30.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023302</LatitudeDegrees>
+              <LongitudeDegrees>36.347265</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.8</AltitudeMeters>
+            <DistanceMeters>1868.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:30:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02329</LatitudeDegrees>
+              <LongitudeDegrees>36.34727</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.8</AltitudeMeters>
+            <DistanceMeters>1869.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:30:27.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023314</LatitudeDegrees>
+              <LongitudeDegrees>36.347281</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.1</AltitudeMeters>
+            <DistanceMeters>1872.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:30:59.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023364</LatitudeDegrees>
+              <LongitudeDegrees>36.347307</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.1</AltitudeMeters>
+            <DistanceMeters>1878.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:31:24.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023366</LatitudeDegrees>
+              <LongitudeDegrees>36.347323</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.3</AltitudeMeters>
+            <DistanceMeters>1879.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:31:48.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023373</LatitudeDegrees>
+              <LongitudeDegrees>36.347329</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.3</AltitudeMeters>
+            <DistanceMeters>1880.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:32:25.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023392</LatitudeDegrees>
+              <LongitudeDegrees>36.347314</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.1</AltitudeMeters>
+            <DistanceMeters>1882.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:32:50.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023388</LatitudeDegrees>
+              <LongitudeDegrees>36.347349</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.3</AltitudeMeters>
+            <DistanceMeters>1885.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>112</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:33:35.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023418</LatitudeDegrees>
+              <LongitudeDegrees>36.347372</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.6</AltitudeMeters>
+            <DistanceMeters>1889.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>46</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:34:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02344</LatitudeDegrees>
+              <LongitudeDegrees>36.347402</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.6</AltitudeMeters>
+            <DistanceMeters>1892.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>46</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:34:29.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023475</LatitudeDegrees>
+              <LongitudeDegrees>36.347392</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.5</AltitudeMeters>
+            <DistanceMeters>1896.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>46</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:35:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023527</LatitudeDegrees>
+              <LongitudeDegrees>36.347395</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.3</AltitudeMeters>
+            <DistanceMeters>1902.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:35:44.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024585</LatitudeDegrees>
+              <LongitudeDegrees>36.347008</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>139.3</AltitudeMeters>
+            <DistanceMeters>2023.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:36:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024758</LatitudeDegrees>
+              <LongitudeDegrees>36.347762</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>141.8</AltitudeMeters>
+            <DistanceMeters>2080.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>3.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:36:24.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024757</LatitudeDegrees>
+              <LongitudeDegrees>36.347295</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.6</AltitudeMeters>
+            <DistanceMeters>2113.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:36:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024752</LatitudeDegrees>
+              <LongitudeDegrees>36.347166</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>140.3</AltitudeMeters>
+            <DistanceMeters>2122.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:37:22.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025027</LatitudeDegrees>
+              <LongitudeDegrees>36.346716</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>138.6</AltitudeMeters>
+            <DistanceMeters>2166.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:37:42.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02502</LatitudeDegrees>
+              <LongitudeDegrees>36.346624</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>138.4</AltitudeMeters>
+            <DistanceMeters>2173.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>47</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:38:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025211</LatitudeDegrees>
+              <LongitudeDegrees>36.346052</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.7</AltitudeMeters>
+            <DistanceMeters>2219.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>53</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:38:25.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025097</LatitudeDegrees>
+              <LongitudeDegrees>36.345632</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.1</AltitudeMeters>
+            <DistanceMeters>2252.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:39:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025144</LatitudeDegrees>
+              <LongitudeDegrees>36.345527</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.3</AltitudeMeters>
+            <DistanceMeters>2261.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:39:42.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025921</LatitudeDegrees>
+              <LongitudeDegrees>36.346744</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.4</AltitudeMeters>
+            <DistanceMeters>2384.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:40:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025944</LatitudeDegrees>
+              <LongitudeDegrees>36.346198</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.2</AltitudeMeters>
+            <DistanceMeters>2423.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:40:29.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025516</LatitudeDegrees>
+              <LongitudeDegrees>36.34668</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2482.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>2.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:41:07.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025551</LatitudeDegrees>
+              <LongitudeDegrees>36.34686</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>138.4</AltitudeMeters>
+            <DistanceMeters>2495.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:41:43.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02545</LatitudeDegrees>
+              <LongitudeDegrees>36.346633</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.9</AltitudeMeters>
+            <DistanceMeters>2515.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:42:24.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025465</LatitudeDegrees>
+              <LongitudeDegrees>36.346291</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.9</AltitudeMeters>
+            <DistanceMeters>2540.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:42:56.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025405</LatitudeDegrees>
+              <LongitudeDegrees>36.346568</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.9</AltitudeMeters>
+            <DistanceMeters>2561.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>59</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.6</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:43:22.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025202</LatitudeDegrees>
+              <LongitudeDegrees>36.346603</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.9</AltitudeMeters>
+            <DistanceMeters>2584.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>69</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:43:42.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025284</LatitudeDegrees>
+              <LongitudeDegrees>36.34689</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>138.8</AltitudeMeters>
+            <DistanceMeters>2606.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>69</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:44:02.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.025005</LatitudeDegrees>
+              <LongitudeDegrees>36.346378</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2654.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>69</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:44:22.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024895</LatitudeDegrees>
+              <LongitudeDegrees>36.346449</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.9</AltitudeMeters>
+            <DistanceMeters>2667.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>69</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:44:44.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024699</LatitudeDegrees>
+              <LongitudeDegrees>36.346758</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>138.6</AltitudeMeters>
+            <DistanceMeters>2698.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>60</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:45:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024663</LatitudeDegrees>
+              <LongitudeDegrees>36.346199</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.0</AltitudeMeters>
+            <DistanceMeters>2738.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>52</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.7</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:45:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024336</LatitudeDegrees>
+              <LongitudeDegrees>36.346093</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.0</AltitudeMeters>
+            <DistanceMeters>2775.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>52</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:46:22.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.024043</LatitudeDegrees>
+              <LongitudeDegrees>36.346116</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.9</AltitudeMeters>
+            <DistanceMeters>2808.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>52</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:47:01.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023792</LatitudeDegrees>
+              <LongitudeDegrees>36.346201</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.4</AltitudeMeters>
+            <DistanceMeters>2837.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>52</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.8</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:47:44.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023706</LatitudeDegrees>
+              <LongitudeDegrees>36.346318</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.0</AltitudeMeters>
+            <DistanceMeters>2850.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>52</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:48:42.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023698</LatitudeDegrees>
+              <LongitudeDegrees>36.346427</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.0</AltitudeMeters>
+            <DistanceMeters>2858.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>77</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:49:06.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023684</LatitudeDegrees>
+              <LongitudeDegrees>36.346454</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.0</AltitudeMeters>
+            <DistanceMeters>2861.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>77</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:49:26.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02368</LatitudeDegrees>
+              <LongitudeDegrees>36.346462</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.0</AltitudeMeters>
+            <DistanceMeters>2862.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>77</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:50:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023675</LatitudeDegrees>
+              <LongitudeDegrees>36.346477</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.2</AltitudeMeters>
+            <DistanceMeters>2863.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:50:28.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023673</LatitudeDegrees>
+              <LongitudeDegrees>36.346482</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.2</AltitudeMeters>
+            <DistanceMeters>2863.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:50:51.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023671</LatitudeDegrees>
+              <LongitudeDegrees>36.346482</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.2</AltitudeMeters>
+            <DistanceMeters>2863.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:51:39.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023666</LatitudeDegrees>
+              <LongitudeDegrees>36.346497</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.2</AltitudeMeters>
+            <DistanceMeters>2864.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:52:20.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023666</LatitudeDegrees>
+              <LongitudeDegrees>36.346509</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.5</AltitudeMeters>
+            <DistanceMeters>2865.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:53:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023669</LatitudeDegrees>
+              <LongitudeDegrees>36.346539</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.5</AltitudeMeters>
+            <DistanceMeters>2867.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>50</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:53:46.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023665</LatitudeDegrees>
+              <LongitudeDegrees>36.34655</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.7</AltitudeMeters>
+            <DistanceMeters>2868.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>51</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:54:31.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023671</LatitudeDegrees>
+              <LongitudeDegrees>36.346583</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.7</AltitudeMeters>
+            <DistanceMeters>2870.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>51</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:55:16.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023679</LatitudeDegrees>
+              <LongitudeDegrees>36.346605</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.9</AltitudeMeters>
+            <DistanceMeters>2872.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>60</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:55:36.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.02368</LatitudeDegrees>
+              <LongitudeDegrees>36.346607</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.9</AltitudeMeters>
+            <DistanceMeters>2872.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>60</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:56:18.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023686</LatitudeDegrees>
+              <LongitudeDegrees>36.346624</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.9</AltitudeMeters>
+            <DistanceMeters>2873.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>60</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:56:58.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023691</LatitudeDegrees>
+              <LongitudeDegrees>36.346639</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.2</AltitudeMeters>
+            <DistanceMeters>2874.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>60</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:57:32.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023699</LatitudeDegrees>
+              <LongitudeDegrees>36.346662</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.2</AltitudeMeters>
+            <DistanceMeters>2876.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>60</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:58:04.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023697</LatitudeDegrees>
+              <LongitudeDegrees>36.346676</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.2</AltitudeMeters>
+            <DistanceMeters>2877.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>56</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:58:37.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023697</LatitudeDegrees>
+              <LongitudeDegrees>36.346679</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2877.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>53</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T17:59:20.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023693</LatitudeDegrees>
+              <LongitudeDegrees>36.346678</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.2</AltitudeMeters>
+            <DistanceMeters>2877.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>53</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:00:00.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023686</LatitudeDegrees>
+              <LongitudeDegrees>36.346679</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2878.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>58</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:00:25.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023685</LatitudeDegrees>
+              <LongitudeDegrees>36.346681</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2878.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>64</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:00:46.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023684</LatitudeDegrees>
+              <LongitudeDegrees>36.34668</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2878.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>64</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:01:24.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023681</LatitudeDegrees>
+              <LongitudeDegrees>36.346681</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2878.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>64</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:01:46.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023681</LatitudeDegrees>
+              <LongitudeDegrees>36.346681</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.4</AltitudeMeters>
+            <DistanceMeters>2878.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>64</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:02:24.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023437</LatitudeDegrees>
+              <LongitudeDegrees>36.346604</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.9</AltitudeMeters>
+            <DistanceMeters>2906.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>64</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:02:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023269</LatitudeDegrees>
+              <LongitudeDegrees>36.346356</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.4</AltitudeMeters>
+            <DistanceMeters>2932.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>64</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:03:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023192</LatitudeDegrees>
+              <LongitudeDegrees>36.346123</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.4</AltitudeMeters>
+            <DistanceMeters>2951.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>57</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.1</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:03:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023001</LatitudeDegrees>
+              <LongitudeDegrees>36.34576</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.9</AltitudeMeters>
+            <DistanceMeters>2985.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>52</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:04:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023024</LatitudeDegrees>
+              <LongitudeDegrees>36.345397</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>134.8</AltitudeMeters>
+            <DistanceMeters>3011.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>54</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.0</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:04:26.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022877</LatitudeDegrees>
+              <LongitudeDegrees>36.345841</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.0</AltitudeMeters>
+            <DistanceMeters>3047.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>54</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>1.5</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:05:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023027</LatitudeDegrees>
+              <LongitudeDegrees>36.346004</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.4</AltitudeMeters>
+            <DistanceMeters>3067.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>57</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.9</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:05:43.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023064</LatitudeDegrees>
+              <LongitudeDegrees>36.34598</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.2</AltitudeMeters>
+            <DistanceMeters>3071.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>61</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:06:05.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022999</LatitudeDegrees>
+              <LongitudeDegrees>36.346058</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.7</AltitudeMeters>
+            <DistanceMeters>3080.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>61</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:06:45.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.022992</LatitudeDegrees>
+              <LongitudeDegrees>36.346008</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.4</AltitudeMeters>
+            <DistanceMeters>3084.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>61</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.2</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:07:25.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023132</LatitudeDegrees>
+              <LongitudeDegrees>36.346065</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.5</AltitudeMeters>
+            <DistanceMeters>3100.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>61</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:07:50.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023155</LatitudeDegrees>
+              <LongitudeDegrees>36.346161</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>135.6</AltitudeMeters>
+            <DistanceMeters>3107.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>61</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.4</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:08:30.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023195</LatitudeDegrees>
+              <LongitudeDegrees>36.346346</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.4</AltitudeMeters>
+            <DistanceMeters>3121.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>83</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:09:08.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023263</LatitudeDegrees>
+              <LongitudeDegrees>36.346436</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>136.9</AltitudeMeters>
+            <DistanceMeters>3131.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>83</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+          <Trackpoint>
+            <Time>2020-08-19T18:09:46.000Z</Time>
+            <Position>
+              <LatitudeDegrees>50.023302</LatitudeDegrees>
+              <LongitudeDegrees>36.346617</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>137.9</AltitudeMeters>
+            <DistanceMeters>3145.0</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>87</Value>
+            </HeartRateBpm>
+            <Extensions>
+              <TPX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+                <Speed>0.3</Speed>
+              </TPX>
+            </Extensions>
+          </Trackpoint>
+        </Track>
+        <Extensions>
+          <LX xmlns="http://www.garmin.com/xmlschemas/ActivityExtension/v2">
+            <AvgSpeed>1.468</AvgSpeed>
+          </LX>
+        </Extensions>
+      </Lap>
+      <Notes>Пешая прогулка </Notes>
+    </Activity>
+  </Activities>
+  <Author xsi:type="Application_t">
+    <Name>tapiriik</Name>
+    <Build>
+      <Version>
+        <VersionMajor>0</VersionMajor>
+        <VersionMinor>0</VersionMinor>
+        <BuildMajor>0</BuildMajor>
+        <BuildMinor>0</BuildMinor>
+      </Version>
+    </Build>
+    <LangID>en</LangID>
+    <PartNumber>000-00000-00</PartNumber>
+  </Author>
+</TrainingCenterDatabase>
