@@ -70,7 +70,7 @@ href="http://library.nothingness.org/articles/SI/en/display/314">[1]</a></cite>
 function loadFilesFromServer(map) {
     map.map.panTo([50, 36.15], {noMoveStart: true, animate: true});
     //let modal = buildLoader(files.count);
-    const getFileObject  = (filePathOrUrl) => {
+    const getFileObject  = async (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
         xhr.open('GET', filePathOrUrl);
         xhr.responseType = 'blob';
@@ -90,29 +90,25 @@ function loadFilesFromServer(map) {
         map.addImage(image);
     };
 
-    const handleTrackFile = file => {
-        for (let [key, value] of Object.entries(extractTracks(file))){
-            console.log(key, value);
-        }
-        /*for (const track of extractTracks(file)) {
+    const handleTrackFile = (file) => {
+        for (const track of extractTracks(file)) {
             track.filename = file.name;
             map.addTrack(track);
-        }*/
+        }
     };
 
-    const handleFile  = file => {
-        //try {
+    const handleFile = file => {
+        try {
             if (/\.jpe?g$/i.test(file.name)) {
                 return handleImage(file);
             }
             return handleTrackFile(file);
-        //} catch (err) {
+        } catch (err) {
             console.error(file, err);
-        //}
+        }
     };
-    for (let step = 0; step < files['files'].length; step++) {
-        getFileObject(files['files'][step]);
-    }
+
+    files['files'].each(getFileObject);
     //load_container.remove();
 }
 
