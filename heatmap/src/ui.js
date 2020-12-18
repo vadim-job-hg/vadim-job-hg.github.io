@@ -72,7 +72,7 @@ function loadFilesFromServer(map) {
     //let modal = buildLoader(files.count);
     const getFileObject  = async (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', filePathOrUrl);
+        xhr.open('GET', filePathOrUrl, false);
         xhr.responseType = 'blob';
         xhr.addEventListener('load',  async() => {
             let blob = xhr.response;
@@ -80,7 +80,7 @@ function loadFilesFromServer(map) {
             blob.url = filePathOrUrl;
             await handleFile(blob);
         });
-        xhr.send();
+        await xhr.send();
     };
 
     const handleImage = async file => {
@@ -104,7 +104,7 @@ function loadFilesFromServer(map) {
             }
             return await handleTrackFile(file);
         } catch (err) {
-            console.error(file, err);
+            //console.error(file, err);
         }
     };
 
