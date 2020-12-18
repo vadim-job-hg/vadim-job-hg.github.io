@@ -97,7 +97,7 @@ function loadFilesFromServer(map) {
         }
     };
 
-    const handleFile = file => {
+    const handleFile = function(file){
         //try {
             if (/\.jpe?g$/i.test(file.name)) {
                 return handleImage(file);
