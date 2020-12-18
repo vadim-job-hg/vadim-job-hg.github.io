@@ -91,6 +91,9 @@ function loadFilesFromServer(map) {
     };
 
     const handleTrackFile = file => {
+        for (let [key, value] of Object.entries(myObject)){
+            console.log(key, value);
+        }
         for (const track of extractTracks(file)) {
             track.filename = file.name;
             map.addTrack(track);
