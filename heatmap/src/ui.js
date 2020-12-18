@@ -94,10 +94,10 @@ function loadFilesFromServer(map) {
         for (let [key, value] of Object.entries(extractTracks(file))){
             console.log(key, value);
         }
-        for (const track of extractTracks(file)) {
+        /*for (const track of extractTracks(file)) {
             track.filename = file.name;
             map.addTrack(track);
-        }
+        }*/
     };
 
     const handleFile  = file => {
