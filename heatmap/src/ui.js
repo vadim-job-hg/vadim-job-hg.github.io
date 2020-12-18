@@ -98,14 +98,14 @@ function loadFilesFromServer(map) {
     };
 
     const handleFile = file => {
-        try {
+        //try {
             if (/\.jpe?g$/i.test(file.name)) {
                 return handleImage(file);
             }
             return handleTrackFile(file);
-        } catch (err) {
+        //} catch (err) {
             console.error(file, err);
-        }
+        //}
     };
 
     files['files'].reduce( async (previousPromise, nextID) => {
