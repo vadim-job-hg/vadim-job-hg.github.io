@@ -15,7 +15,9 @@ for file in os.listdir(path):
             index+=1
             new_name = file[0:19]+'_'+str(index)+".tcx"
         os.rename(os.path.join(path, file), os.path.join(path, new_name))
-    files['files'].append('./files/tcx/'+file)
+        files['files'].append('./files/tcx/'+new_name)
+    else:
+        files['files'].append('./files/tcx/'+file)
     files['count'] = files['count'] + 1
 
 path = str(Path(__file__).parent.absolute())+"/fit"
