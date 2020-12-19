@@ -72,7 +72,7 @@ function loadFilesFromServer(map) {
     //let modal = buildLoader(files.count);
     const getFileObject  = async (filePathOrUrl) => {
         let xhr = new XMLHttpRequest();
-        xhr.responseType = 'blob';
+        //xhr.responseType = 'blob';
         xhr.addEventListener('load',  async() => {
             let blob = xhr.response;
             blob.name = filePathOrUrl.replace(/^.*[\\\/]/, '');
