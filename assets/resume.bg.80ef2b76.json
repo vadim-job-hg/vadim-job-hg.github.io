@@ -1,0 +1,327 @@
+{
+  "profile": {
+    "name": "Вадим Кузнецов",
+    "job": "Full Stack Разработчик",
+    "avatar": "img/profile/me.jpg",
+    "aboutMe": "Професионален уеб разработчик с повече от десет години\nопит в области като Интернет на нещата, продажби,\nобразователни курсове и др. Работил върху интеграция на външни\nсофтуерни системи като платежни системи, ERP, edge\nсофтуер за IoT приложения. Разработвал API за\nмобилни и pwa приложения.",
+    "socialNetwork": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/vadym-kuznetsov-60605193/"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/vadim-job-hg/"
+      },
+      {
+        "name": "sololearn",
+        "url": "https://www.sololearn.com/en/profile/2024996"
+      }
+    ]
+  },
+  "cv": {
+    "icon": "DocumentTextIcon",
+    "name": "PDF",
+    "value": "Вадим Кузнецов",
+    "url": "https://vadim-job-hg.github.io/files/VadymKuznetsov.pdf"
+  },
+  "information": [
+    {
+      "icon": "EnvelopeIcon",
+      "name": "Имейл адрес",
+      "value": "vadimjobhg86@gmail.com"
+    },
+    {
+      "icon": "CakeIcon",
+      "name": "Дата на раждане",
+      "value": "04 юли 1986"
+    },
+    {
+      "icon": "DevicePhoneMobileIcon",
+      "name": "Телефон (България)",
+      "value": "+3 (59) 88 776 1154"
+    },
+    {
+      "icon": "DevicePhoneMobileIcon",
+      "name": "Телефон (Украйна)",
+      "value": "+38 (068) 271 78 03"
+    },
+    {
+      "icon": "ComputerDesktopIcon",
+      "name": "Тип работа",
+      "value": "Дистанционна или пълно работно време"
+    }
+  ],
+  "skill": [
+    "PHP",
+    "Laravel",
+    "Phalcon",
+    "Kohana",
+    "SQL",
+    "JavaScript",
+    "jQuery",
+    "CSS",
+    "HTML",
+    "JSON",
+    "Bootstrap",
+    "Swagger",
+    "Git",
+    "DataTables",
+    "GAE",
+    "AWS",
+    "Python",
+    "Django",
+    "NetSuite"
+  ],
+  "language": [
+    {
+      "name": "Руски",
+      "code": "ru-RU",
+      "flag": "svg/russia.svg",
+      "level": "Майчин език"
+    },
+    {
+      "name": "Украински",
+      "code": "ua-UA",
+      "flag": "svg/ukraine.svg",
+      "level": "Майчин език"
+    },
+    {
+      "name": "Английски",
+      "code": "en-US",
+      "flag": "svg/united-states.svg",
+      "level": "Напреднало ниво"
+    },
+    {
+      "name": "Български",
+      "code": "bg-BG",
+      "flag": "svg/bulgaria.svg",
+      "level": "Започвам да уча :-)"
+    }
+  ],
+  "experience": [
+    {
+      "job": "Full-Stack Разработчик",
+      "company": "Grid Dynamics",
+      "companyLogo": "img/company/grid-dynamics.png",
+      "location": "Украйна",
+      "workType": "Пълно работно време",
+      "start": "Авг 2017",
+      "end": "Май 2024",
+      "description": "Full-Stack разработчик по много проекти за <a href=\"https://www.naava.io/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 \">Naava Green Walls</a>. Участвах в разработката на системи за мониторинг на състоянието на зелените стени и инструменти\nза дистанционно управление на графици за поливане, осветление и циркулация на въздуха. \nРаботих върху API за <a href=\"https://www.naava.app/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">NAAVA application</a>.\n"
+    },
+    {
+      "job": "Full-Stack Разработчик",
+      "company": "KnubiSoft",
+      "companyLogo": "img/company/knubisoft.jpg",
+      "location": "Украйна",
+      "workType": "Пълно работно време",
+      "start": "Мар 2016",
+      "end": "Юли 2017",
+      "description": "Разработвах различни приложения от нулата. \nСъздавах помощни приложения за шведския отдел на BCA.\nПридобих опит с фреймуърка Phalcon.\n"
+    },
+    {
+      "job": "Full-Stack Разработчик",
+      "company": "iDeus",
+      "companyLogo": "img/company/ideus.jpg",
+      "location": "Украйна",
+      "workType": "Пълно работно време",
+      "start": "Окт 2014",
+      "end": "Мар 2016",
+      "description": "Бях в екип за разработка на образователната платформа TesTeachers, която предоставя\nзастрахователни курсове за студенти в САЩ. \nУчаствах във внедряването на платежна система, рефакторинг на кода и търсене\nна уязвимости в системата."
+    },
+    {
+      "job": "Full-Stack Разработчик",
+      "company": "MobilLuck",
+      "companyLogo": "img/company/mobilluck.png",
+      "location": "Украйна",
+      "workType": "Пълно работно време",
+      "start": "Май 2013",
+      "end": "Окт 2014",
+      "description": "Работих като част от екип по сайта <a href=\"https://www.naava.io/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 \">https://www.mobilluck.com.ua/</a>.\nРазработвах инструменти за мениджъри продажби, които им помагаха да извършват масова преоценка\nна стоки в онлайн магазина.\nСъздадох система за мониторинг на пазара и преоценка въз основа на\nпечалба и цени на конкуренти."
+    }
+  ],
+  "education": [
+    {
+      "college": "Kharkov Polytechnic Institute",
+      "collegeLogo": "img/college/kpi.png",
+      "course": "Технолог по компютърни мрежи, управление на мрежи и сигурност на системи",
+      "start": "1963",
+      "end": "1973",
+      "url": "https://www.kpi.kharkov.ua/eng/"
+    },
+    {
+      "college": "Kharkov Patent and Computer College",
+      "collegeLogo": "img/college/kpcc.svg",
+      "course": "Програмиране за компютърни технологии и автоматизирани системи",
+      "start": "2003",
+      "end": "2006",
+      "url": "https://khpcc.com/"
+    }
+  ],
+  "volunteer": [
+    {
+      "job": "",
+      "company": "",
+      "companyLogo": "",
+      "location": "",
+      "workType": "",
+      "start": "",
+      "end": "",
+      "description": ""
+    }
+  ],
+  "certificate": [
+    {
+      "course": "PHP",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "13 октомври, 2016",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-XOUWN8YB",
+      "url": "https://www.sololearn.com/Certificate/CT-XOUWN8YB/pdf"
+    },
+    {
+      "course": "SQL",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "19 май, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-A7MVXLIK",
+      "url": "https://www.sololearn.com/Certificate/CT-A7MVXLIK/pdf"
+    },
+    {
+      "course": "JavaScript",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "24 май, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-SF6AEAGK",
+      "url": "https://www.sololearn.com/Certificate/CT-SF6AEAGK/pdf"
+    },
+    {
+      "course": "jQuery",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "20 юни, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-J1VDQBJG",
+      "url": "https://www.sololearn.com/Certificate/CT-J1VDQBJG/pdf"
+    },
+    {
+      "course": "HTML",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "19 май, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-KWGILUBT",
+      "url": "https://www.sololearn.com/Certificate/CT-KWGILUBT/pdf"
+    },
+    {
+      "course": "CSS",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "20 юни, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-UIES3YMB",
+      "url": "https://www.sololearn.com/Certificate/CT-UIES3YMB/pdf"
+    },
+    {
+      "course": "Java",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "18 декември, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-NBCOTCGG",
+      "url": "https://www.sololearn.com/Certificate/CT-NBCOTCGG/pdf"
+    },
+    {
+      "course": "Ruby",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "03 октомври, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-FPWM4E8N",
+      "url": "https://www.sololearn.com/Certificate/CT-FPWM4E8N/pdf"
+    },
+    {
+      "course": "Python Core",
+      "school": "Sololearn",
+      "schoolLogo": "img/college/sololearn.png",
+      "issueDate": "18 декември, 2017",
+      "expirationDate": "Безсрочен",
+      "credentialCode": "CT-NBCOTCGG",
+      "url": "https://www.sololearn.com/Certificate/CT-NBCOTCGG/pdf"
+    }
+  ],
+  "project": [
+    {
+      "name": "NAAVA APPLICATION",
+      "description": "Приложение за мониторинг на състоянието и управление на средата на зелените стени NAAVA.",
+      "language": "PHP",
+      "image": "img/project/naava.png",
+      "stars": "",
+      "forks": "",
+      "url": "https://naava.app/"
+    }
+  ],
+  "pets": [
+    {
+      "name": "Zombies Run Unofficial Translation Project",
+      "description": "Превод на диалозите и аудио дизайна на играта Zombies, Run! с използване на невронна озвучка",
+      "language": "Python, Elevenlabs.io",
+      "image": "img/project/zombies.png",
+      "url": [
+        "https://www.patreon.com/c/breakchainsprojects",
+        "https://boosty.to/breakchainsprojects"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "name": "NAAVA GREEN WALLS",
+      "images": [
+        {
+          "src": "img/gallery/naava/naava-wall-1.jpg",
+          "width": 2000,
+          "height": 2000,
+          "alt": "NAAVA ИЗОБРАЖЕНИЕ 1"
+        },
+        {
+          "src": "img/gallery/naava/naava-wall-2.jpg",
+          "width": 2000,
+          "height": 2000,
+          "alt": "NAAVA ИЗОБРАЖЕНИЕ 2"
+        }
+      ]
+    },
+    {
+      "name": "GRID DYNAMICS|DAXX",
+      "images": [
+        {
+          "src": "img/gallery/griddynamics/gd-1.jpg",
+          "width": 1536,
+          "height": 2048,
+          "alt": "Бягане с DAXX"
+        },
+        {
+          "src": "img/gallery/griddynamics/gd-2.jpg",
+          "width": 1536,
+          "height": 2048,
+          "alt": "Бягане с DAXX"
+        }
+      ]
+    },
+    {
+      "name": "София, България",
+      "images": [
+        {
+          "src": "img/gallery/sofia/srs.jpg",
+          "width": 1536,
+          "height": 2048,
+          "alt": "Бягане със Sofia Running Sekta"
+        }
+      ]
+    }
+  ]
+}
