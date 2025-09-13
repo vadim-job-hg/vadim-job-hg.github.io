@@ -1,0 +1,23 @@
+{
+    "timeline": [
+        {
+            "type": "map",
+            "zoom": 10,
+            "center": [
+                47.4979,
+                19.0402
+            ],
+            "duration": 2
+        },
+        {
+            "type": "track",
+            "activity_type": "Walk",
+            "format": "gpx",
+            "path": "\/files\/gpx\/budapesht\/11495054798.gpx"
+        },
+        {
+            "type": "pause",
+            "seconds": 7
+        }
+    ]
+}
