@@ -1,10 +1,13 @@
 {
     "timeline": [
         {
-          "type": "map",
-          "zoom": 12,
-          "center": [46.4825, 30.7233],
-          "duration": 2
+            "type": "map",
+            "zoom": 12,
+            "center": [
+                46.4825,
+                30.7233
+            ],
+            "duration": 2
         },
         {
             "type": "track",
