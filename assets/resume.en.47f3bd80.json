@@ -1,9 +1,10 @@
 {
   "profile": {
     "name": "Vadym Kuznetsov",
-    "job": "Full Stack -kehittäjä",
+    "job": "Full Stack Developer",
     "avatar": "img/profile/me.jpg",
-    "aboutMe": "Ammattilainen web-kehittäjä, jolla on yli kymmenen vuoden kokemus aloilta kuten esineiden internet, myynti, koulutuskurssit jne. Työskennellyt kolmannen osapuolen ohjelmistojärjestelmien, kuten maksujärjestelmien, ERP:n ja IoT-sovellusten reunalaskennan ohjelmistojen integroinnin parissa. Kehittänyt API-rajapintoja mobiili- ja PWA-sovelluksille.",
+    "aboutMe": "Professional Web Developer with more than ten years of\nexperience in areas such as the Internet of Things, sales,\neducational courses, etc. Worked on integrating third-party\nsoftware systems, such as payment systems, ERP, edge\ncomputing software for IoT applications. Developed APIs for\nmobile and pwa applications.",
+    "professionalSummaryTitle": "Professional Summary",
     "socialNetwork": [
       {
         "name": "linkedin",
@@ -28,28 +29,33 @@
   "information": [
     {
       "icon": "EnvelopeIcon",
-      "name": "Sähköposti",
+      "name": "Mail address",
       "value": "vadimjobhg86@gmail.com"
     },
     {
       "icon": "CakeIcon",
-      "name": "Syntymäpäivä",
+      "name": "Birthday",
       "value": "04 July 1986"
     },
     {
       "icon": "DevicePhoneMobileIcon",
-      "name": "Puhelinnumero (BG)",
+      "name": "Phone Number(BG)",
       "value": "+3 (59) 88 776 1154"
     },
     {
       "icon": "DevicePhoneMobileIcon",
-      "name": "Puhelinnumero (UA)",
+      "name": "Phone Number(UA)",
       "value": "+38 (068) 271 78 03"
     },
     {
       "icon": "ComputerDesktopIcon",
-      "name": "Työmuoto",
-      "value": "Etätyö tai kokoaikainen"
+      "name": "Work type",
+      "value": "Remote or Fulltime"
+    },
+    {
+      "icon": "MapPinIcon",
+      "name": "Location",
+      "value": "Sofia, Bulgaria"
     }
   ],
   "skill": [
@@ -75,85 +81,99 @@
   ],
   "language": [
     {
-      "name": "Venäjä",
+      "name": "Russian",
       "code": "ru-RU",
+      "prefix": "RU",
       "flag": "svg/russia.svg",
-      "level": "Äidinkieli"
+      "level": "Native Language"
     },
     {
-      "name": "Ukraina",
+      "name": "Ukrainian",
       "code": "ua-UA",
+      "prefix": "UA",
       "flag": "svg/ukraine.svg",
-      "level": "Äidinkieli"
+      "level": "Native Language"
     },
     {
-      "name": "Englanti",
+      "name": "English",
       "code": "en-US",
+      "prefix": "EN",
       "flag": "svg/united-states.svg",
-      "level": "Edistynyt"
+      "level": "Advanced"
     },
     {
-      "name": "Bulgaria",
+      "name": "Bulgarian",
       "code": "bg-BG",
+      "prefix": "BG",
       "flag": "svg/bulgaria.svg",
-      "level": "Aion oppia :-)"
+      "level": "Going to learn :-)"
     }
   ],
   "experience": [
     {
-      "job": "Full-Stack -kehittäjä",
+      "job": "PHP Backend Developer",
+      "company": "Kita Koch",
+      "companyLogo": "img/company/kitakoch.png",
+      "location": "Remote",
+      "workType": "Fulltime",
+      "start": "July 2024",
+      "end": "Present",
+      "description": "Designing and implementing new features, resolving bugs, developing microservices, and providing ongoing system support for <a href=\"https://www.kitakoch.de/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">Kita Koch</a>. Worked with Laravel, SQL, PHP, Swagger, and multi-tenant architectures."
+    },
+    {
+      "job": "Full-Stack Developer",
       "company": "Grid Dynamics",
       "companyLogo": "img/company/grid-dynamics.png",
       "location": "Ukraine",
-      "workType": "Kokoaikainen",
+      "workType": "Fulltime",
       "start": "Aug 2017",
       "end": "May 2024",
-      "description": "Full-Stack -kehittäjä monissa projekteissa yritykselle <a href=\"https://www.naava.io/\" target=\"_blank\">Naava Green Walls</a>. Osallistui vihreiden seinien kunnon seurantajärjestelmien kehittämiseen ja työkalujen luomiseen kasteluaikataulujen, valaistuksen ja ilmanvaihdon etähallintaan. Työskenteli API-kehityksen parissa <a href=\"https://www.naava.app/\" target=\"_blank\">NAAVA-sovellukselle</a>."
+      "description": "Full-Stack Developer for many projects for <a href=\"https://www.naava.io/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 \">Naava Green Walls</a>. Was involved in the\ndevelopment of monitoring systems for the condition of green walls and the development\nof tools for remote control of watering schedules, lighting and air circulation. \nEngaged in API development for <a href=\"https://www.naava.app/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800\">NAAVA application</a>.\n"
     },
     {
-      "job": "Full-Stack -kehittäjä",
+      "job": "Full-Stack Developer",
       "company": "KnubiSoft",
       "companyLogo": "img/company/knubisoft.jpg",
       "location": "Ukraine",
-      "workType": "Kokoaikainen",
+      "workType": "Fulltime",
       "start": "Mar 2016",
       "end": "Jul 2017",
-      "description": "Kehitti useita sovelluksia alusta alkaen. Toteutti apusovelluksia BCA:n Ruotsin osastolle. Sai kehityskokemusta Phalcon-kehyksen käytöstä."
+      "description": "Developed various applications from scratch. \nDeveloped subsidiary applications for the Swedish department of the BCA.\nGained development experience using the Phalcon framework.\n"
     },
     {
-      "job": "Full-Stack -kehittäjä",
+      "job": "Full-Stack Developer",
       "company": "iDeus",
       "companyLogo": "img/company/ideus.jpg",
       "location": "Ukraine",
-      "workType": "Kokoaikainen",
+      "workType": "Fulltime",
       "start": "Oct 2014",
       "end": "Mar 2016",
-      "description": "Osallistui TesTeachers-koulutusalustan kehittämiseen, joka tarjoaa vakuutuskurssit Yhdysvaltain opiskelijoille. Toteutti maksujärjestelmän, teki koodin refaktorointia ja etsi järjestelmän haavoittuvuuksia."
+      "description": "Was on the team developing the TesTeachers educational platform, which provides\ninsurance courses for US students. \nWas involved in the implementation of the payment system, code refactoring and searching\nfor vulnerabilities in the system."
     },
     {
-      "job": "Full-Stack -kehittäjä",
+      "job": "Full-Stack Developer",
       "company": "MobilLuck",
       "companyLogo": "img/company/mobilluck.png",
       "location": "Ukraine",
-      "workType": "Kokoaikainen",
+      "workType": "Fulltime",
       "start": "May 2013",
       "end": "Oct 2014",
-      "description": "Työskenteli tiimissä sivustolla <a href=\"https://www.mobilluck.com.ua/\" target=\"_blank\">https://www.mobilluck.com.ua/</a>. Kehitti työkaluja myyntipäälliköille, jotka auttoivat heitä tekemään massaarviointeja verkkokaupan tuotteille. Toteutti järjestelmän, joka seurasi markkinoita ja teki uudelleenarviointeja kilpailijoiden hintojen ja kannattavuuden perusteella."
+      "description": "Worked as part of a team on the site <a href=\"https://www.naava.io/\" target=\"_blank\" class=\"hover:underline bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 \">https://www.mobilluck.com.ua/</a>.\nWas developing tools for sales managers that helped them carry out mass revaluation of\nitems in an online store.\nDeveloped a system for monitoring the items market and revaluation based on the\nprofitability and prices of goods from competitors."
     }
   ],
   "education": [
     {
       "college": "Kharkov Polytechnic Institute",
       "collegeLogo": "img/college/kpi.png",
-      "course": "Tietotekniikan verkkojen teknologia, verkonhallinta ja järjestelmäturvallisuus",
-      "start": "1963",
-      "end": "1973",
+      "course": "Technologist in Computer Networks, Network Management and Systems Security",
+      "start": "2003",
+      "end": "2006",
       "url": "https://www.kpi.kharkov.ua/eng/"
     },
     {
       "college": "Kharkov Patent and Computer College",
       "collegeLogo": "img/college/kpcc.svg",
-      "course": "Tietokoneteknologian ja automatisoitujen järjestelmien ohjelmointi",
+      "course": "Programming for Computer technology and automated systems",
       "start": "2003",
       "end": "2006",
       "url": "https://khpcc.com/"
@@ -177,7 +197,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "13 October, 2016",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-XOUWN8YB",
       "url": "https://www.sololearn.com/Certificate/CT-XOUWN8YB/pdf"
     },
@@ -186,7 +206,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "19 May, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-A7MVXLIK",
       "url": "https://www.sololearn.com/Certificate/CT-A7MVXLIK/pdf"
     },
@@ -195,7 +215,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "24 May, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-SF6AEAGK",
       "url": "https://www.sololearn.com/Certificate/CT-SF6AEAGK/pdf"
     },
@@ -204,7 +224,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "20 June, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-J1VDQBJG",
       "url": "https://www.sololearn.com/Certificate/CT-J1VDQBJG/pdf"
     },
@@ -213,7 +233,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "19 May, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-KWGILUBT",
       "url": "https://www.sololearn.com/Certificate/CT-KWGILUBT/pdf"
     },
@@ -222,7 +242,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "20 June, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-UIES3YMB",
       "url": "https://www.sololearn.com/Certificate/CT-UIES3YMB/pdf"
     },
@@ -231,7 +251,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "18 December, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-NBCOTCGG",
       "url": "https://www.sololearn.com/Certificate/CT-NBCOTCGG/pdf"
     },
@@ -240,7 +260,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "03 October, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-FPWM4E8N",
       "url": "https://www.sololearn.com/Certificate/CT-FPWM4E8N/pdf"
     },
@@ -249,7 +269,7 @@
       "school": "Sololearn",
       "schoolLogo": "img/college/sololearn.png",
       "issueDate": "18 December, 2017",
-      "expirationDate": "Ei vanhene",
+      "expirationDate": "No expiration date",
       "credentialCode": "CT-NBCOTCGG",
       "url": "https://www.sololearn.com/Certificate/CT-NBCOTCGG/pdf"
     }
@@ -257,7 +277,7 @@
   "project": [
     {
       "name": "NAAVA APPLICATION",
-      "description": "Sovellus NAAVA-vihreseinien kunnon seurantaan ja ympäristön hallintaan.",
+      "description": "Application for monitoring the condition and managing the environment of NAAVA green walls.",
       "language": "PHP",
       "image": "img/project/naava.png",
       "stars": "",
@@ -268,7 +288,7 @@
   "pets": [
     {
       "name": "Zombies Run Unofficial Translation Project",
-      "description": "Pelin Zombies, Run! dialogien ja äänisuunnittelun käännös käyttäen neuroverkkopohjaista äänenmuokkausta.",
+      "description": "Translation of the dialogues and audio design of the game Zombies, Run! using neural network voice-over",
       "language": "Python, Elevenlabs.io",
       "image": "img/project/zombies.png",
       "url": [
