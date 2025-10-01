@@ -626,6 +626,12 @@
             "activity_type": "Hike",
             "format": "gpx",
             "path": "\/files\/gpx\/sofia\/15553232226.gpx"
+        },
+        {
+          "type": "track",
+          "activity_type": "Run",
+          "format": "gpx",
+          "path": "\/files\/gpx\/sofia\/15963673291.gpx"
         }
     ]
 }
