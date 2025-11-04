@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Preview - Vadym Kuznetsov</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .toolbar {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      z-index: 1000;
+    }
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .toolbar-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+    .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .btn, select {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: #1976d2;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #1565c0;
+    }
+    .btn-secondary {
+      background: #10b981;
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: #059669;
+    }
+    select {
+      background: white;
+      border: 2px solid #e5e7eb;
+      color: #333;
+      cursor: pointer;
+    }
+    select:hover {
+      border-color: #1976d2;
+    }
+    select:focus {
+      outline: none;
+      border-color: #1976d2;
+    }
+    .content {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .preview-container {
+      width: 100%;
+      max-width: 850px;
+      height: 100%;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    iframe {
+      flex: 1;
+      border: none;
+      width: 100%;
+      background: white;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 18px;
+      color: #666;
+    }
+    .spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #1976d2;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-right: 15px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @media (max-width: 768px) {
+      .toolbar {
+        flex-direction: column;
+        padding: 10px 15px;
+        gap: 10px;
+      }
+      .toolbar-left,
+      .toolbar-right {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .toolbar-title {
+        font-size: 16px;
+      }
+      .btn, select {
+        padding: 8px 15px;
+        font-size: 12px;
+      }
+      .content {
+        padding: 10px;
+      }
+    }
+
+    /* PDF Container Styles */
+    .pdf-container {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 794px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 0;
+      opacity: 0;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .pdf-container.generating {
+      opacity: 1;
+      z-index: 9999;
+    }
+    .pdf-container .header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      height: 122px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .pdf-container .bookmark {
+      position: absolute;
+      width: 73px;
+      height: 156px;
+      background-image: url('data:image/png;base64,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');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      left: 33px;
+      top: 0;
+      z-index: 10000;
+    }
+    .pdf-container .bookmark span {
+      color: #fff;
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 1;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    .pdf-container .title {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0 0 0 130px;
+      text-align: left;
+      line-height: 1;
+      height: 32px;
+      display: flex;
+      align-items: center;
+    }
+    .pdf-container .content-split {
+      display: flex;
+      width: 100%;
+      min-height: 400px;
+    }
+    .pdf-container .left-panel,
+    .pdf-container .right-panel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .pdf-container .section {
+      flex: 1 1 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      font-size: 12px;
+      background: #fff;
+      box-sizing: border-box;
+      min-height: 27px;
+      border-bottom: 1px solid #ccc;
+      padding-top: 33px;
+      padding-bottom: 40px;
+    }
+    .pdf-container .section:last-child {
+      border-bottom: none;
+    }
+    .pdf-container .left-section {
+      padding-left: 56px;
+      padding-right: 27px;
+    }
+    .pdf-container .right-section {
+      flex: 0 1 auto;
+      padding-left: 27px !important;
+      padding-right: 60px !important;
+    }
+    .pdf-container .section-1.left-section {
+      padding-top: 73px;
+      height: 370px;
+      min-height: 370px;
+      max-height: 370px;
+      overflow: hidden;
+    }
+    .pdf-container .section-2.left-section {
+      height: 232px;
+      min-height: 232px;
+      max-height: 232px;
+      overflow: hidden;
+    }
+    .pdf-container .section-3.left-section {
+      display: flex;
+      flex-direction: column;
+      height: 270px;
+      min-height: 270px;
+      max-height: 270px;
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+    }
+    .pdf-container .left-panel {
+      width: 275px;
+      min-height: 270px;
+      border-right: 1px solid #ccc;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .pdf-container .left-section-bottom {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      padding-top: 33px;
+    }
+    .pdf-container .right-panel {
+      flex: 1;
+      min-height: 270px;
+    }
+    .pdf-container .info-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .pdf-container .info-item {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .pdf-container .info-icon {
+      font-size: 15px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      color: inherit;
+      filter: none;
+      font-weight: 700;
+    }
+    .pdf-container .info-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 1.5;
+    }
+    .pdf-container .info-item:nth-child(2) .info-icon {
+      filter: grayscale(1) brightness(0.7);
+      opacity: 0.7;
+    }
+    .pdf-container .info-item:last-child .info-icon {
+      background: transparent;
+      color: #1976d2;
+      filter: none;
+      opacity: 1;
+    }
+    .pdf-container .info-text {
+      text-align: justify;
+    }
+    .pdf-container .info-main {
+      font-size: 10px;
+      color: #000;
+      font-weight: 500;
+    }
+    .pdf-container .info-label {
+      font-size: 8px;
+      color: #888;
+    }
+    .pdf-container .email-link,
+    .pdf-container .phone-link {
+      color: #000;
+      text-decoration: none;
+    }
+    .pdf-container .section-title {
+      font-size: 13px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      color: #000;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .pdf-container .lang-list-block {
+      width: 100%;
+    }
+    .pdf-container .lang-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .pdf-container .lang-item {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .pdf-container .lang-avatar {
+      width: 24px;
+      height: 24px;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      font-weight: 700;
+    }
+    .pdf-container .lang-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .pdf-container .lang-name {
+      font-size: 10px;
+      color: #000;
+      font-weight: 500;
+    }
+    .pdf-container .lang-level {
+      font-size: 8px;
+      color: #888;
+      text-align: justify;
+    }
+    .pdf-container .skills-block {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .pdf-container .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-content: flex-start;
+      justify-content: flex-start;
+      flex: 1;
+    }
+    .pdf-container .skill-badge {
+      background: transparent;
+      color: #222;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 0;
+      margin: 2px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 24px;
+      min-width: 40px;
+    }
+    .pdf-container .skill-text {
+      display: block;
+      line-height: 1;
+    }
+    .pdf-container .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .pdf-container .heading {
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      padding: 0;
+      margin-left: 0;
+      color: #222;
+    }
+    .pdf-container .card {
+      background: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+      margin-bottom: 21px;
+      margin-left: 0;
+      width: 100%;
+    }
+    .pdf-container .card-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 4px;
+    }
+    .pdf-container .card-title {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 0;
+      color: #222;
+      border: none;
+      padding: 0;
+      letter-spacing: 0;
+      text-transform: none;
+      flex: 1;
+    }
+    .pdf-container .card-period {
+      font-style: italic;
+      font-size: 11px;
+      color: #666;
+      text-align: right;
+      flex-shrink: 0;
+      min-width: 93px;
+    }
+    .pdf-container .card-subtitle {
+      font-style: italic;
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 7px;
+    }
+    .pdf-container .card-description {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 8px;
+      text-align: justify;
+    }
+    .pdf-container .card-description a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+    .pdf-container .card-footer {
+      font-size: 10px;
+      color: #444;
+      margin-bottom: 5px;
+      text-align: justify;
+    }
+    .pdf-container .mb-24 {
+      margin-bottom: 16px;
+    }
+    .pdf-container .text-justify {
+      text-align: justify !important;
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/preview.87238399.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/zh-CH.26d05869.js">
+</head>
+<body>
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <div class="toolbar-title">📄 Resume Preview</div>
+    </div>
+    <div class="toolbar-right">
+      <select id="langSelect" onchange="changeLanguage(this.value)">
+        <option value="en-US">🇬🇧 English</option>
+        <option value="ru-RU">🇷🇺 Русский</option>
+        <option value="bg-BG">🇧🇬 Български</option>
+        <option value="fi-FI">🇫🇮 Suomi</option>
+        <option value="ja-JA">🇯🇵 日本語</option>
+        <option value="zh-CH">🇨🇳 中文</option>
+      </select>
+      <button class="btn btn-primary" onclick="downloadPDF()">⬇️ Download PDF</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="preview-container">
+      <iframe id="previewFrame" src=""></iframe>
+    </div>
+  </div>
+
+  <!-- PDF Content Container -->
+  <div id="pdfContent" class="pdf-container"></div>
+
+  
+</body>
+</html>
