@@ -53,9 +53,14 @@ function go() {
 
 // 👉 любые пользовательские события
 ['click', 'touchstart'].forEach(event => {
-    document.addEventListener(event, go, { once: true });
+    // document.addEventListener(event, go, { once: true });
 });    
-
+// fallback (если вообще нет взаимодействия)
+window.onload = function() {
+    setTimeout(() => {
+        window.location.href = "wayfairapp://www.wayfair.com/furniture/sb0/end-side-tables-c414604.html";
+    }, 5000);
+};
 </script>
 <div class="card">
     <h2>Open Product</h2>
