@@ -44,7 +44,10 @@ function redirectToUrl() {
           setTimeout(function() {
             window.location.href = 'wayfairapp://www.wayfair.com/furniture/sb0/end-side-tables-c414604.html';
           }, 500);
-        };
+        }
+        window.onload = function() {
+          redirectToUrl();
+        };;
 </script>
 <div class="card">
     <h2>Open Product</h2>
