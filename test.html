@@ -3,37 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <title>Wayfair Link Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 500px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #4f46e5;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #4338ca;
+        }
+
+        .result {
+            margin-top: 20px;
+            word-break: break-all;
+            font-size: 14px;
+        }
+
+        .link-box {
+            background: #f1f5f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .copy-btn {
+            margin-top: 10px;
+            background: #10b981;
+        }
+
+        .copy-btn:hover {
+            background: #059669;
+        }
+    </style>
 </head>
 <body>
-    <h2>Wayfair Affiliate Link Generator</h2>
+
+<div class="card">
+    <h2>Wayfair Affiliate Generator</h2>
+    <p>Generate randomized affiliate links with encoded deep link</p>
 
     <button onclick="generateLink()">Generate Link</button>
 
-    <p id="result" style="margin-top:20px;"></p>
+    <div class="result" id="result"></div>
+</div>
 
-    <script>
-        const domains = [
-            "anrdoezrs.net",
-            "dpbolvw.net",
-            "tkqlhce.com",
-            "jdoqocy.com",
-            "kqzyfj.com"
-        ];
+<script>
+    const domains = [
+        "anrdoezrs.net",
+        "dpbolvw.net",
+        "tkqlhce.com",
+        "jdoqocy.com",
+        "kqzyfj.com"
+    ];
 
-        function generateLink() {
-            const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+    const targetUrl = "https://www.wayfair.com/Xia-Home-Fashions--Holly-Berry-Embroidered-Hemstitch-Round-Holiday-Doily-XD1080591600-L7327-K~W004187885.html&cjsku=W004187885";
 
-            const targetUrl = "https%3A%2F%2Fwww.wayfair.com%2FXia-Home-Fashions--Holly-Berry-Embroidered-Hemstitch-Round-Holiday-Doily-XD1080591600-L7327-K%7EW004187885.html&cjsku=W004187885";
+    function generateLink() {
+        const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+        const encodedUrl = encodeURIComponent(targetUrl);
 
-            const encodedUrl = encodeURIComponent(targetUrl);
+        const finalUrl = `https://www.${randomDomain}/click-101726686-13730088?url=${encodedUrl}`;
 
-            const finalUrl = `https://www.${randomDomain}/click-101726686-13730088?url=${encodedUrl}`;
-
-            document.getElementById("result").innerHTML = `
-                <strong>Generated link:</strong><br>
+        document.getElementById("result").innerHTML = `
+            <div class="link-box">
                 <a href="${finalUrl}" target="_blank">${finalUrl}</a>
-            `;
-        }
-    </script>
+            </div>
+            <button class="copy-btn" onclick="copyLink('${finalUrl}')">Copy</button>
+        `;
+    }
+
+    function copyLink(link) {
+        navigator.clipboard.writeText(link);
+        alert("Copied!");
+    }
+</script>
+
 </body>
 </html>
