@@ -40,15 +40,15 @@
 </head>
 <body>
 <script>
-setTimeout(() => {
-  const a = document.createElement("a");
-  a.href =
-    "https://www.jdoqocy.com/click-101726686-13730087?url=https%3A%2F%2Fwww.wayfair.com%2FXia-Home-Fashions--Holly-Berry-Embroidered-Hemstitch-Round-Holiday-Doily-XD1080591600-L7327-K%7EW004187885.html&cjsku=W004187885";
-  a.rel = "noopener noreferrer";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-}, 500);
+function redirectToUrl() {
+          setTimeout(function() {
+            window.location.href = 'wayfairapp://www.wayfair.com/furniture/sb0/end-side-tables-c414604.html';
+          }, 500);
+        }
+        window.onload = function() {
+          trackPageAndCart();
+          redirectToUrl();
+        };
 </script>
 <div class="card">
     <h2>Open Product</h2>
