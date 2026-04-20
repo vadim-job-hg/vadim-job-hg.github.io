@@ -1,1 +1,39 @@
-<a href="wayfairapp://www.wayfair.com/furniture/sb0/end-side-tables-c414604.html">21321321321321321321321</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wayfair Link Generator</title>
+</head>
+<body>
+    <h2>Wayfair Affiliate Link Generator</h2>
+
+    <button onclick="generateLink()">Generate Link</button>
+
+    <p id="result" style="margin-top:20px;"></p>
+
+    <script>
+        const domains = [
+            "anrdoezrs.net",
+            "dpbolvw.net",
+            "tkqlhce.com",
+            "jdoqocy.com",
+            "kqzyfj.com"
+        ];
+
+        function generateLink() {
+            const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+
+            const targetUrl = "wayfairapp://www.wayfair.com/furniture/sb0/end-side-tables-c414604.html";
+
+            const encodedUrl = encodeURIComponent(targetUrl);
+
+            const finalUrl = `https://www.${randomDomain}/click-101726686-13730088?url=${encodedUrl}`;
+
+            document.getElementById("result").innerHTML = `
+                <strong>Generated link:</strong><br>
+                <a href="${finalUrl}" target="_blank">${finalUrl}</a>
+            `;
+        }
+    </script>
+</body>
+</html>
